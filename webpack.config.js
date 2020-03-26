@@ -3,6 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: 'eval',
+  devServer: { host: '0.0.0.0', disableHostCheck: true },
   entry: [
     'webpack-dev-server/client?http://localhost:3002',
     './src/index.jsx'
