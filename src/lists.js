@@ -1,3 +1,10 @@
+/*
+"available": {
+  "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+  "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+}
+ */
+
 export const bugList = [
   {
     "critterNumber": 1,
@@ -5,7 +12,11 @@ export const bugList = [
     "location": "Flying",
     "value": 160,
     "time": "4 a.m. - 7 p.m.",
-    "month": "September-June (Northern) / March-December (Southern)"
+    "month": "September-June (Northern) / March-December (Southern)",
+    "available": {
+      "northern": [9,10,11,12,1,2,3,4,5,6],
+      "southern": [3,4,5,6,7,8,9,10,11,12],
+    }
   },
   {
     "critterNumber": 2,
@@ -13,7 +24,11 @@ export const bugList = [
     "location": "Flying",
     "value": 160,
     "time": "4 a.m. - 7 p.m.",
-    "month": "September-June (Northern) / March-April, September-December (Southern)"
+    "month": "September-June (Northern) / March-April, September-December (Southern)",
+    "available": {
+      "northern": [9,10,11,12,1,2,3,4,5,6],
+      "southern": [3,4,5,6,7,8,9,10,11,12],
+    }
   },
   {
     "critterNumber": 3,
@@ -21,7 +36,11 @@ export const bugList = [
     "location": "Flying",
     "value": 240,
     "time": "4 a.m. - 7 p.m.",
-    "month": "March-September (Northern) / September-March (Southern)"
+    "month": "March-September (Northern) / September-March (Southern)",
+    "available": {
+      "northern": [3,4,5,6,7,8,9],
+      "southern": [1,2,3,9,10,11,12],
+    }
   },
   {
     "critterNumber": 4,
@@ -29,7 +48,11 @@ export const bugList = [
     "location": "Flying",
     "value": "2,500",
     "time": "4 a.m. - 7 p.m.",
-    "month": "March-June (Northern) / September-December (Southern)"
+    "month": "March-June (Northern) / September-December (Southern)",
+    "available": {
+      "northern": [3,4,5,6],
+      "southern": [6,7,8,9,10,11,12],
+    }
   },
   {
     "critterNumber": 5,
@@ -37,7 +60,11 @@ export const bugList = [
     "location": "Flying",
     "value": 300,
     "time": "4 a.m. - 7 p.m.",
-    "month": "April-August (Northern) / October-February (Southern)"
+    "month": "April-August (Northern) / October-February (Southern)",
+    "available": {
+      "northern": [4,5,6,7,8],
+      "southern": [1,2,10,11,12],
+    }
   },
   {
     "critterNumber": 6,
@@ -45,7 +72,11 @@ export const bugList = [
     "location": "Flying",
     "value": "1,000",
     "time": "8 a.m. - 7 p.m.",
-    "month": "Year-round (Northern and Southern)"
+    "month": "Year-round (Northern and Southern)",
+    "available": {
+      "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+      "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+    }
   },
   {
     "critterNumber": 7,
@@ -53,7 +84,11 @@ export const bugList = [
     "location": "Flying",
     "value": "",
     "time": "4 a.m. - 7 p.m.",
-    "month": "May-August (Northern) / December-March (Southern)"
+    "month": "May-August (Northern) / December-March (Southern)",
+    "available": {
+      "northern": [5,6,7,8],
+      "southern": [1,2,3,12],
+    }
   },
   {
     "critterNumber": 8,
@@ -61,7 +96,11 @@ export const bugList = [
     "location": "Flying",
     "value": 140,
     "time": "4 a.m. - 5 p.m.",
-    "month": "September-November (Northern) / March-May (Southern)"
+    "month": "September-November (Northern) / March-May (Southern)",
+    "available": {
+      "northern": [9,10,11],
+      "southern": [3,4,5],
+    }
   },
   {
     "critterNumber": 9,
@@ -69,7 +108,11 @@ export const bugList = [
     "location": "Flying",
     "value": "4,000",
     "time": "5 p.m. - 8 a.m.",
-    "month": "June-September, December-March (Northern) / December-March, June-September (Southern)"
+    "month": "June-September, December-March (Northern) / December-March, June-September (Southern)",
+    "available": {
+      "northern": [1,2,3,6,7,8,9,12],
+      "southern": [1,2,3,6,7,8,9,12],
+    }
   },
   {
     "critterNumber": 10,
@@ -77,7 +120,11 @@ export const bugList = [
     "location": "Flying",
     "value": "3,000",
     "time": "8 a.m. - 5 p.m.",
-    "month": "April-September (Northern) / November-March (Southern)"
+    "month": "April-September (Northern) / November-March (Southern)",
+    "available": {
+      "northern": [4,5,6,7,8,9],
+      "southern": [1,2,3,11,12],
+    }
   },
   {
     "critterNumber": 11,
@@ -85,7 +132,11 @@ export const bugList = [
     "location": "Flying",
     "value": "2,500",
     "time": "8 a.m. - 5 p.m.",
-    "month": "April-September, December-February (Northern) / November-March, June-August (Southern)"
+    "month": "April-September, December-February (Northern) / November-March, June-August (Southern)",
+    "available": {
+      "northern": [1,2,3,4,5,6,7,8,9,12],
+      "southern": [1,2,3,6,7,8,9,10,11,12],
+    }
   },
   {
     "critterNumber": 12,
@@ -93,7 +144,11 @@ export const bugList = [
     "location": "Flying",
     "value": "4,000",
     "time": "8 a.m. - 4 p.m.",
-    "month": "May-September (Northern) / November-March (Southern)"
+    "month": "May-September (Northern) / November-March (Southern)",
+    "available": {
+      "northern": [5,6,7,8,9],
+      "southern": [1,2,3,11,12],
+    }
   },
   {
     "critterNumber": 13,
@@ -101,7 +156,11 @@ export const bugList = [
     "location": "Flying by light",
     "value": 130,
     "time": "7 p.m. - 4 a.m.",
-    "month": "Year-round (Northern and Southern)"
+    "month": "Year-round (Northern and Southern)",
+    "available": {
+      "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+      "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+    }
   },
   {
     "critterNumber": 14,
@@ -109,7 +168,11 @@ export const bugList = [
     "location": "On trees",
     "value": "3,000",
     "time": "7 p.m. - 4 a.m.",
-    "month": "April-September (Northern) / October-March (Southern)"
+    "month": "April-September (Northern) / October-March (Southern)",
+    "available": {
+      "northern": [4,5,6,7,8,9],
+      "southern": [1,2,3,10,11,12],
+    }
   },
   {
     "critterNumber": 15,
@@ -117,7 +180,11 @@ export const bugList = [
     "location": "Flying",
     "value": "2,500",
     "time": "8 a.m. - 4 p.m.",
-    "month": "April-September (Northern) / October-March (Southern)"
+    "month": "April-September (Northern) / October-March (Southern)",
+    "available": {
+      "northern": [4,5,6,7,8,9],
+      "southern": [1,2,3,10,11,12],
+    }
   },
   {
     "critterNumber": 16,
@@ -125,7 +192,11 @@ export const bugList = [
     "location": "On ground",
     "value": 200,
     "time": "8 a.m. - 7 p.m.",
-    "month": "April-November (Northern) / November-May (Southern)"
+    "month": "April-November (Northern) / November-May (Southern)",
+    "available": {
+      "northern": [4,5,6,7,8,9,10,11],
+      "southern": [1,2,3,4,5,11,12],
+    }
   },
   {
     "critterNumber": 17,
@@ -133,7 +204,11 @@ export const bugList = [
     "location": "On ground",
     "value": 600,
     "time": "8 a.m. - 7 p.m.",
-    "month": "August-November (Northern) / February-May (Southern)"
+    "month": "August-November (Northern) / February-May (Southern)",
+    "available": {
+      "northern": [8,9,10,11],
+      "southern": [2,3,4,5],
+    }
   },
   {
     "critterNumber": 18,
@@ -141,7 +216,11 @@ export const bugList = [
     "location": "On ground",
     "value": 160,
     "time": "8 a.m. - 7 p.m.",
-    "month": "August-November (Northern) / February-May (Southern)"
+    "month": "August-November (Northern) / February-May (Southern)",
+    "available": {
+      "northern": [8,9,10,11],
+      "southern": [2,3,4,5],
+    }
   },
   {
     "critterNumber": 19,
@@ -149,7 +228,11 @@ export const bugList = [
     "location": "On ground",
     "value": 160,
     "time": "8 a.m. - 5 p.m.",
-    "month": "July-September (Northern) / January-March (Southern)"
+    "month": "July-September (Northern) / January-March (Southern)",
+    "available": {
+      "northern": [7,8,9],
+      "southern": [1,2,3],
+    }
   },
   {
     "critterNumber": 20,
@@ -157,7 +240,11 @@ export const bugList = [
     "location": "On ground",
     "value": 130,
     "time": "5 p.m. - 8 a.m.",
-    "month": "September-November (Northern) / March-May (Southern)"
+    "month": "September-November (Northern) / March-May (Southern)",
+    "available": {
+      "northern": [9,10,11],
+      "southern": [3,4,5],
+    }
   },
   {
     "critterNumber": 21,
@@ -165,7 +252,11 @@ export const bugList = [
     "location": "On ground",
     "value": 430,
     "time": "5 p.m. - 8 a.m.",
-    "month": "September-October (Northern) / March-April (Southern)"
+    "month": "September-October (Northern) / March-April (Southern)",
+    "available": {
+      "northern": [9,10],
+      "southern": [3,4],
+    }
   },
   {
     "critterNumber": 22,
@@ -173,7 +264,11 @@ export const bugList = [
     "location": "On flowers",
     "value": 430,
     "time": "8 a.m. - 5 p.m.",
-    "month": "March-November (Northern) / September-May (Southern)"
+    "month": "March-November (Northern) / September-May (Southern)",
+    "available": {
+      "northern": [3,4,5,6,7,8,9,10,11],
+      "southern": [1,2,3,4,5,9,10,11,12],
+    }
   },
   {
     "critterNumber": 23,
@@ -181,7 +276,11 @@ export const bugList = [
     "location": "On white flowers",
     "value": "2,400",
     "time": "8 a.m. - 5 p.m.",
-    "month": "March-November (Northern) / September-May (Southern)"
+    "month": "March-November (Northern) / September-May (Southern)",
+    "available": {
+      "northern": [3,4,5,6,7,8,9,10,11],
+      "southern": [1,2,3,4,5,9,10,11,12],
+    }
   },
   {
     "critterNumber": 24,
@@ -189,7 +288,11 @@ export const bugList = [
     "location": "Flying",
     "value": 200,
     "time": "8 a.m. - 5 p.m.",
-    "month": "March-July (Northern) / March-July (Southern)"
+    "month": "March-July (Northern) / March-July (Southern)",
+    "available": {
+      "northern": [3,4,5,6,7],
+      "southern": [3,4,5,6,7],
+    }
   },
   {
     "critterNumber": 25,
@@ -197,7 +300,11 @@ export const bugList = [
     "location": "Falls from shaking trees",
     "value": "2,500",
     "time": "All day",
-    "month": "Year-round (Northern and Southern)"
+    "month": "Year-round (Northern and Southern)",
+    "available": {
+      "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+      "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+    }
   },
   {
     "critterNumber": 26,
@@ -205,7 +312,11 @@ export const bugList = [
     "location": "On trees",
     "value": "",
     "time": "8 a.m. - 5 p.m.",
-    "month": "July-August (Northern) / January-February (Southern)"
+    "month": "July-August (Northern) / January-February (Southern)",
+    "available": {
+      "northern": [7,8],
+      "southern": [1,2],
+    }
   },
   {
     "critterNumber": 27,
@@ -213,7 +324,11 @@ export const bugList = [
     "location": "On trees",
     "value": "",
     "time": "8 a.m. - 5 p.m.",
-    "month": "July-August (Northern) / January-February (Southern)"
+    "month": "July-August (Northern) / January-February (Southern)",
+    "available": {
+      "northern": [7,8],
+      "southern": [1,2],
+    }
   },
   {
     "critterNumber": 28,
@@ -221,7 +336,11 @@ export const bugList = [
     "location": "On trees",
     "value": "",
     "time": "8 a.m. - 5 p.m.",
-    "month": "July-August (Northern) / January-February (Southern)"
+    "month": "July-August (Northern) / January-February (Southern)",
+    "available": {
+      "northern": [7,8],
+      "southern": [1,2],
+    }
   },
   {
     "critterNumber": 29,
@@ -229,7 +348,11 @@ export const bugList = [
     "location": "On trees",
     "value": 400,
     "time": "8 a.m. - 5 p.m.",
-    "month": "August-September (Northern) / February-March (Southern)"
+    "month": "August-September (Northern) / February-March (Southern)",
+    "available": {
+      "northern": [8,9],
+      "southern": [2,3],
+    }
   },
   {
     "critterNumber": 30,
@@ -237,7 +360,11 @@ export const bugList = [
     "location": "On trees",
     "value": "",
     "time": "4 a.m. - 8 a.m., 4 p.m. - 7 p.m.",
-    "month": "July-August (Northern) / January-February (Southern)"
+    "month": "July-August (Northern) / January-February (Southern)",
+    "available": {
+      "northern": [7,8],
+      "southern": [1,2],
+    }
   },
   {
     "critterNumber": 31,
@@ -245,7 +372,11 @@ export const bugList = [
     "location": "On trees",
     "value": "",
     "time": "All day",
-    "month": "July-August (Northern) / January-February (Southern)"
+    "month": "July-August (Northern) / January-February (Southern)",
+    "available": {
+      "northern": [7,8],
+      "southern": [1,2],
+    }
   },
   {
     "critterNumber": 32,
@@ -253,7 +384,11 @@ export const bugList = [
     "location": "Flying",
     "value": 180,
     "time": "8 a.m. - 7 p.m.",
-    "month": "September-October (Northern) / March-April (Southern)"
+    "month": "September-October (Northern) / March-April (Southern)",
+    "available": {
+      "northern": [9,10],
+      "southern": [3,4],
+    }
   },
   {
     "critterNumber": 33,
@@ -261,7 +396,11 @@ export const bugList = [
     "location": "Flying",
     "value": 230,
     "time": "8 a.m. - 5 p.m.",
-    "month": "April-October (Northern) / October-April (Southern)"
+    "month": "April-October (Northern) / October-April (Southern)",
+    "available": {
+      "northern": [4,5,6,7,8,9,10],
+      "southern": [1,2,3,4,10,11,12],
+    }
   },
   {
     "critterNumber": 34,
@@ -269,7 +408,11 @@ export const bugList = [
     "location": "Flying",
     "value": "4,500",
     "time": "8 a.m. - 5 p.m.",
-    "month": "May-October (Northern) / November-April (Southern)"
+    "month": "May-October (Northern) / November-April (Southern)",
+    "available": {
+      "northern": [5,6,7,8,9,10],
+      "southern": [1,2,3,4,11,12],
+    }
   },
   {
     "critterNumber": 35,
@@ -277,7 +420,11 @@ export const bugList = [
     "location": "Flying",
     "value": "",
     "time": "All day",
-    "month": "November-February (Northern) / May-August (Southern)"
+    "month": "November-February (Northern) / May-August (Southern)",
+    "available": {
+      "northern": [1,2,11,12],
+      "southern": [5,6,7,8],
+    }
   },
   {
     "critterNumber": 36,
@@ -285,7 +432,11 @@ export const bugList = [
     "location": "Flying",
     "value": "",
     "time": "7 p.m. - 4 a.m.",
-    "month": "June (Northern) / December (Southern)"
+    "month": "June (Northern) / December (Southern)",
+    "available": {
+      "northern": [6],
+      "southern": [12],
+    }
   },
   {
     "critterNumber": 37,
@@ -293,7 +444,11 @@ export const bugList = [
     "location": "Underground",
     "value": 500,
     "time": "All day",
-    "month": "November-May (Northern) / May-November (Southern)"
+    "month": "November-May (Northern) / May-November (Southern)",
+    "available": {
+      "northern": [1,2,3,4,5,11,12],
+      "southern": [5,6,7,8,9,10,11],
+    }
   },
   {
     "critterNumber": 38,
@@ -301,7 +456,11 @@ export const bugList = [
     "location": "Ponds",
     "value": 130,
     "time": "8 a.m. - 7 p.m.",
-    "month": "May-September (Northern) / November-March (Southern)"
+    "month": "May-September (Northern) / November-March (Southern)",
+    "available": {
+      "northern": [5,6,7,8,9],
+      "southern": [1,2,3,11,12],
+    }
   },
   {
     "critterNumber": 39,
@@ -309,7 +468,11 @@ export const bugList = [
     "location": "Ponds and rivers",
     "value": 800,
     "time": "8 a.m. - 7 p.m.",
-    "month": "May-September (Northern) / November-March (Southern)"
+    "month": "May-September (Northern) / November-March (Southern)",
+    "available": {
+      "northern": [5,6,7,8,9],
+      "southern": [1,2,3,11,12],
+    }
   },
   {
     "critterNumber": 40,
@@ -317,7 +480,11 @@ export const bugList = [
     "location": "Ponds and rivers",
     "value": "2,000",
     "time": "7 p.m. - 8 a.m.",
-    "month": "April-September (Northern) / October-March (Southern)"
+    "month": "April-September (Northern) / October-March (Southern)",
+    "available": {
+      "northern": [4,5,6,7,8,9],
+      "southern": [1,2,3,10,11,12],
+    }
   },
   {
     "critterNumber": 41,
@@ -373,7 +540,11 @@ export const bugList = [
     "location": "On tree stumps",
     "value": 350,
     "time": "All day",
-    "month": "Year-round (Northern and Southern)"
+    "month": "Year-round (Northern and Southern)",
+    "available": {
+      "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+      "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+    }
   },
   {
     "critterNumber": 48,
@@ -629,7 +800,8 @@ export const bugList = [
     "location": "On ground",
     "value": "8,000",
     "time": "7 p.m. - 4 a.m.",
-    "month": "November-April (Northern) / May-October (Southern)"
+    "month": "November-April (Northern) / May-October (Southern)",
+    "img": "tarantula",
   },
   {
     "critterNumber": 80,
@@ -658,7 +830,11 @@ export const fishList = [
    "shadowSize": "Smallest",
    "value": "160",
    "time": "9 a.m. - 4 p.m.",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "3",
@@ -667,7 +843,11 @@ export const fishList = [
    "shadowSize": "Small",
    "value": "160",
    "time": "All day",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "4",
@@ -676,7 +856,11 @@ export const fishList = [
    "shadowSize": "Medium",
    "value": "240",
    "time": "4 p.m. - 9 a.m.",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "5",
@@ -685,7 +869,11 @@ export const fishList = [
    "shadowSize": "Large",
    "value": "300",
    "time": "All day",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "6",
@@ -694,7 +882,11 @@ export const fishList = [
    "shadowSize": "Large",
    "value": "4,000",
    "time": "4 p.m. - 9 a.m.",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "7",
@@ -703,7 +895,11 @@ export const fishList = [
    "shadowSize": "Smallest",
    "value": "1,300",
    "time": "All day",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "8",
@@ -712,7 +908,11 @@ export const fishList = [
    "shadowSize": "Smallest",
    "value": "1,300",
    "time": "9 a.m. - 4 p.m.",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "9",
@@ -721,7 +921,11 @@ export const fishList = [
    "shadowSize": "Small",
    "value": "4,500",
    "time": "9 a.m. - 4 p.m.",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "10",
@@ -784,7 +988,11 @@ export const fishList = [
    "shadowSize": "Small",
    "value": "400",
    "time": "4 p.m. - 9 a.m.",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "17",
@@ -820,7 +1028,11 @@ export const fishList = [
    "shadowSize": "Small",
    "value": "180",
    "time": "9 a.m. - 4 p.m.",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "21",
@@ -838,7 +1050,11 @@ export const fishList = [
    "shadowSize": "Large",
    "value": "400",
    "time": "All day",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "23",
@@ -1144,7 +1360,11 @@ export const fishList = [
    "shadowSize": "Small",
    "value": "200",
    "time": "4 a.m. - 9 p.m.",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "57",
@@ -1153,7 +1373,11 @@ export const fishList = [
    "shadowSize": "Small",
    "value": "150",
    "time": "All day",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "58",
@@ -1171,7 +1395,11 @@ export const fishList = [
    "shadowSize": "X Large",
    "value": "400",
    "time": "All day",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "60",
@@ -1180,7 +1408,11 @@ export const fishList = [
    "shadowSize": "Medium",
    "value": "3,000",
    "time": "All day",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "61",
@@ -1198,7 +1430,11 @@ export const fishList = [
    "shadowSize": "Large",
    "value": "800",
    "time": "All day",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  },
  {
    "critterNumber": "63",
@@ -1351,8 +1587,27 @@ export const fishList = [
    "shadowSize": "Small",
    "value": "15,000",
    "time": "9 p.m. - 4 a.m.",
-   "month": "Year-round (Northern and Southern)"
+   "month": "Year-round (Northern and Southern)",
+   "available": {
+         "northern": [1,2,3,4,5,6,7,8,9,10,11,12],
+         "southern": [1,2,3,4,5,6,7,8,9,10,11,12],
+       }
  }
 ]
 
 export const fullList = fishList.concat(bugList);
+
+export const monthMap = {
+  1: 'Jan.',
+  2: 'Feb.',
+  3: 'Mar.',
+  4: 'Apr.',
+  5: 'May.',
+  6: 'Jun.',
+  7: 'Jul.',
+  8: 'Aug.',
+  9: 'Sep.',
+  10: 'Oct.',
+  11: 'Nov.',
+  12: 'Dec.',
+}
