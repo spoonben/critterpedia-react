@@ -492,7 +492,11 @@ export const bugList = [
     "location": "On flowers",
     "value": 120,
     "time": "All day",
-    "month": "March-November (Northern) / September-May (Southern)"
+    "month": "March-November (Northern) / September-May (Southern)",
+    "available": {
+      "northern": [3,4,5,6,7,8,9,10,11],
+      "southern": [1,2,3,4,5,9,10,11,12],
+    }
   },
   {
     "critterNumber": 42,
@@ -500,7 +504,11 @@ export const bugList = [
     "location": "On flowers",
     "value": "1,000",
     "time": "7 p.m. - 8 a.m.",
-    "month": "March-November (Northern) / September-May (Southern)"
+    "month": "March-November (Northern) / September-May (Southern)",
+    "available": {
+      "northern": [3,4,5,6,7,8,9,10,11],
+      "southern": [1,2,3,4,5,9,10,11,12],
+    }
   },
   {
     "critterNumber": 43,
@@ -508,7 +516,11 @@ export const bugList = [
     "location": "On flowers",
     "value": 200,
     "time": "8 a.m. - 5 p.m.",
-    "month": "March-June, October (Northern) / September-December, April (Southern)"
+    "month": "March-June, October (Northern) / September-December, April (Southern)",
+    "available": {
+      "northern": [3,4,5,6],
+      "southern": [9,10,11,12],
+    }
   },
   {
     "critterNumber": 44,
@@ -516,7 +528,11 @@ export const bugList = [
     "location": "On ground",
     "value": "1,500",
     "time": "All day",
-    "month": "February-November (Northern) / August-May (Southern)"
+    "month": "February-November (Northern) / August-May (Southern)",
+    "available": {
+      "northern": [2,3,4,5,6,7,8,9,10,11],
+      "southern": [1,2,3,4,5,8,9,10,11,12],
+    }
   },
   {
     "critterNumber": 45,
@@ -524,7 +540,11 @@ export const bugList = [
     "location": "On trees",
     "value": "2,400",
     "time": "All day",
-    "month": "April-August (Northern) / October-February (Southern)"
+    "month": "April-August (Northern) / October-February (Southern)",
+    "available": {
+      "northern": [4,5,6,7,8],
+      "southern": [1,2,10,11,12],
+    }
   },
   {
     "critterNumber": 46,
@@ -532,7 +552,11 @@ export const bugList = [
     "location": "On tree stumps",
     "value": 450,
     "time": "All day",
-    "month": "May-June, September-November (Northern) / November-December, March-April (Southern)"
+    "month": "May-June, September-November (Northern) / November-December, March-April (Southern)",
+    "available": {
+      "northern": [5,6],
+      "southern": [9,10,11],
+    }
   },
   {
     "critterNumber": 47,
