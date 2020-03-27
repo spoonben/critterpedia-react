@@ -13,7 +13,7 @@ Also I can't get typescript to run on my server so I'm trying again with react.
 
 `npm start`
 
-[http://localhost:3002](Then navigate here)
+[Then navigate here](http://localhost:3002)
 
 It is `3002` because of things on my server, but change it if you want.
 
