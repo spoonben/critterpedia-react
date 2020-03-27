@@ -27,7 +27,6 @@ const App = () => {
             <div>
                 {results.map(result => {
                     const availablitly = result.time.split(' - ');
-                    const isAvailableNow = availablitly.length === 1 ? true : moment().isBetween(availablitly[0], availablitly[1])
                     return <div className="critterCard" key={result.name + result.critterNumber}>
                         <div className="number">#{result.critterNumber}</div>
                         <div className="name">{result.name}</div>
@@ -35,14 +34,14 @@ const App = () => {
                         <div>Value: {result.value}</div>
                         <div className="availablitly">
                           <div>
-                          {result.available && (<div className="card-title">Seasonability</div>)}
-                          {result.available && (
-                            <div className="calendar">{getCalendarMonths(result.available).map(month => (
-                            <div className="month">{month}</div>
-                           ))}</div>)}
+                            {result.available && (<span className="card-title">Seasonability</span>)}
+                            {result.available && (
+                              <div className="calendar">{getCalendarMonths(result.available).map((month, index) => (
+                              <span className="month">{month}</span>
+                             ))}</div>)}
                            </div>
-                           <div className="availablitly-spacer"/>
-                           <div><span className="card-title">Current Active Hours:</span> {result.time} {isAvailableNow && (<span>NOW!</span>)}</div>
+                          <div className="availablitly-spacer"/>
+                           <div><span className="card-title">Current Active Hours:</span> <div>{result.time}</div></div>
                          </div>
                         <div className="location-wrap">
                           <div><span className="card-title">Location:</span> {result.location}</div>
