@@ -28,11 +28,11 @@
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
     "url-loader": "^4.0.0",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "babel-loader": "^7.0.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
     "express": "^4.17.1",
     "moment": "^2.24.0",
     "react-dom": "^16.13.1"
