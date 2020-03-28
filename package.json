@@ -27,7 +27,8 @@
     "style-loader": "^0.16.1",
     "url-loader": "^4.0.0",
     "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.11.5"
+    "webpack-dev-server": "^2.11.5",
+    "yarn": "^1.22.4"
   },
   "dependencies": {
     "babel-loader": "^7.0.0",
