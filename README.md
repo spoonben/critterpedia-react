@@ -11,7 +11,7 @@ Also I can't get typescript to run on my server so I'm trying again with react.
 
 `npm install`
 
-`npm start`
+`npm run dev`
 
 [Then navigate here](http://localhost:8080)
 
