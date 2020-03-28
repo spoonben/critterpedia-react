@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "lint": "eslint src",
-    "start": "node server.js"
+    "start": "webpack && node server.js"
   },
   "repository": "https://github.com/spoonben/critterpedia-react",
   "author": "Ben Spoon",
@@ -26,8 +26,8 @@
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
     "url-loader": "^4.0.0",
-    "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.11.5"
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "babel-loader": "^7.0.0",
