@@ -5,7 +5,8 @@
   "scripts": {
     "lint": "eslint src",
     "build": "webpack",
-    "start": "webpack && node server.js"
+    "dev": "webpack && node server.js",
+    "start": "node server.js"
   },
   "repository": "https://github.com/spoonben/critterpedia-react",
   "author": "Ben Spoon",
