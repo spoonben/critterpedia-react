@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "lint": "eslint src",
+    "build": "webpack",
     "start": "webpack && node server.js"
   },
   "repository": "https://github.com/spoonben/critterpedia-react",
@@ -21,6 +22,7 @@
     "eslint": "^3.19.0",
     "eslint-plugin-react": "^6.10.3",
     "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.0.3",
     "node-sass": "^4.5.2",
     "react": "^16.13.1",
     "sass-loader": "^6.0.3",
@@ -31,6 +33,7 @@
   },
   "dependencies": {
     "babel-loader": "^7.0.0",
+    "express": "^4.17.1",
     "moment": "^2.24.0",
     "react-dom": "^16.13.1"
   },

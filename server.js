@@ -1,16 +1,15 @@
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+const port = process.env.PORT || 8080
 
-const port = process.env.PORT || 3000
 
-new WebpackDevServer(webpack(config), {
-    publicPath: config.output.publicPath
-  })
-  .listen(port, '0.0.0.0', function (err, result) {
-    if (err) {
-      console.log(err);
-    }
 
-    console.log('Running at http://0.0.0.0:3002');
-  });
+const express = require('express');
+const app = express();
+const path = require('path');
+
+// viewed at http://localhost:8080
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
+});
+
+console.log(`\n \n \nListening on  ${port}`)
+app.listen(8080);
