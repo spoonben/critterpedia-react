@@ -1,14 +1,11 @@
 const path = require("path");
-const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 const isDev = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  entry: [isDev && "webpack-hot-middleware/client", "./src/index.js"].filter(
-    Boolean
-  ),
+  entry: "./src/index.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
@@ -33,9 +30,10 @@ module.exports = {
     ],
   },
   plugins: [
-    isDev && new webpack.HotModuleReplacementPlugin(),
-    isDev && new webpack.NoEmitOnErrorsPlugin(),
-    isDev && new ReactRefreshPlugin(),
+    isDev &&
+      new ReactRefreshPlugin({
+        disableRefreshCheck: true,
+      }),
     new HtmlWebpackPlugin({ filename: "./index.html", template: "index.ejs" }),
   ].filter(Boolean),
 };
