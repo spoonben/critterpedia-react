@@ -10,13 +10,4 @@ const Spacer = ({ height, width, isInline }) => (
 	/>
 );
 
-const styles = {
-	spacer: {
-		flex: "0 0 auto",
-	},
-	inline: {
-		display: "inline-flex",
-	},
-};
-
 export default Spacer;
