@@ -3,7 +3,7 @@ import * as React from "react";
 import Calendar from "../calendar";
 import Spacer from "../spacer";
 
-import bellsImage from "../../img/bells.png";
+import bellsImage from "../../img/bell-bag.png";
 
 const Name = ({ critterName }) => {
   return (
@@ -19,24 +19,24 @@ const CritterCard = ({ critter, hemisphere }) => {
   return (
     <div className="critterCard" key={critter.name + critter.critterNumber}>
       <div className="number">#{critter.critterNumber}</div>
-      <Name critterName={critter.name} />
-      {critter.shadowSize && <div>Shadow Size{critter.shadowSize}</div>}
-      <div className="value">
-        <img src={bellsImage} className="bells" /> <Spacer width="5px" />{" "}
-        {critter.value}
+      <div>
+        <Name critterName={critter.name} />
+        <Spacer height="20px" />
+        <div className="value">
+          <img src={bellsImage} className="bells" /> <Spacer width="5px" />{" "}
+          <span className="amount">{critter.value}</span>
+        </div>
       </div>
+      <Spacer height="10px" />
+      {critter.shadowSize && <div>Shadow Size{critter.shadowSize}</div>}
       <div className="availablitly">
         <div>
-          {critter.available && (
-            <span className="card-title">Seasonability</span>
-          )}
           {critter.available && (
             <Calendar availablitly={critter.available[hemisphere]} />
           )}
         </div>
-        <div className="availablitly-spacer" />
+        <Spacer height="10px" />
         <div>
-          <span className="card-title">Current Active Hours:</span>{" "}
           <div>{critter.time}</div>
         </div>
       </div>

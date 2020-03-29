@@ -24,12 +24,11 @@ h1 {
 }
 
 .critterCard {
-	/*background: #f5e6b3;*/
 	background-image: url("bg.png");
 	border-radius: 3px;
 	box-shadow: 1px 1px 5px 2px #5e584a;
 	margin: 20px;
-	padding: 10px;
+	padding: 20px;
 	position: relative;
 }
 
@@ -66,16 +65,15 @@ h1 {
 .value {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .value .bells {
-	width: 20px;
+	width: 35px;
 }
 
-.availablitly {
-}
-
-.availablitly-spacer {
+.amount {
+	margin-top: 15px;
 }
 
 .location-wrap {
