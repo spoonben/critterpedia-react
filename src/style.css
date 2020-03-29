@@ -48,19 +48,28 @@ h1 {
 .name {
 	padding: 5px 30px;
 	color: #5e584a;
-	margin-top: 1px;
 	font-size: 25px;
-	line-height: 1.5;
-	transform: rotate(-4deg);
+	line-height: 1.2;
 	display: inline-block;
+	border: 1px solid #000;
 }
 .name-content {
+	margin-top: 10px;
+	transform: rotate(-4deg);
 	display: inline-block;
-	/*background-color: #fefff5;*/
-	background: url("name-bg.png");
-	background-size: 100% 100%;
-	padding: 8px;
-	/*box-shadow: 5px 3px 4px 1px;*/
+	background-color: #fefff5;
+	border-radius: 5px;
+	padding: 2px;
+	box-shadow: 5px 3px 4px 1px;
+}
+
+.value {
+	display: flex;
+	align-items: center;
+}
+
+.value .bells {
+	width: 20px;
 }
 
 .availablitly {

@@ -1,6 +1,9 @@
 import * as React from "react";
 
 import Calendar from "../calendar";
+import Spacer from "../spacer";
+
+import bellsImage from "../../img/bells.png";
 
 const Name = ({ critterName }) => {
   return (
@@ -18,7 +21,10 @@ const CritterCard = ({ critter, hemisphere }) => {
       <div className="number">#{critter.critterNumber}</div>
       <Name critterName={critter.name} />
       {critter.shadowSize && <div>Shadow Size{critter.shadowSize}</div>}
-      <div>Value: {critter.value}</div>
+      <div className="value">
+        <img src={bellsImage} className="bells" /> <Spacer width="5px" />{" "}
+        {critter.value}
+      </div>
       <div className="availablitly">
         <div>
           {critter.available && (
