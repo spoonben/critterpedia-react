@@ -12,20 +12,34 @@ const App = () => {
       setResultsList(fullList);
       return;
     }
-    const newResults = resultsList.filter((item) =>
+    const newResults = resultsList.filter(item =>
       item.name.toLowerCase().includes(searchText.toLowerCase())
     );
     setResultsList(newResults);
   }, [searchText]);
 
-  const handleChange = (event) => setSearchText(event.target.value);
+  const handleChange = event => setSearchText(event.target.value);
 
-  const getCalendarMonths = (availablitly) =>
-    availablitly[hemisphere].map((month) => monthMap[month]);
+  const getCalendarMonths = availablitly =>
+    availablitly[hemisphere].map(month => monthMap[month]);
+
+  const Month = ({ month }) => {
+    return <span className="month">{month}</span>;
+  };
+
+  const Calendar = ({ availablitly }) => {
+    return (
+      <div className="calendar">
+        {getCalendarMonths(availablitly).map((month, index) => (
+          <Month month={month} />
+        ))}
+      </div>
+    );
+  };
 
   const ResultsDiv = ({ results }) => (
     <div>
-      {results.map((result) => {
+      {results.map(result => {
         return (
           <div className="critterCard" key={result.name + result.critterNumber}>
             <div className="number">#{result.critterNumber}</div>
@@ -38,13 +52,7 @@ const App = () => {
                   <span className="card-title">Seasonability</span>
                 )}
                 {result.available && (
-                  <div className="calendar">
-                    {getCalendarMonths(result.available).map((month) => (
-                      <span className="month" key={month}>
-                        {month}
-                      </span>
-                    ))}
-                  </div>
+                  <Calendar availablitly={result.available} />
                 )}
               </div>
               <div className="availablitly-spacer" />
