@@ -5,7 +5,7 @@ import { fullList, monthMap } from "./lists";
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [resultsList, setResultsList] = useState(fullList);
-  const [hemisphere, setHemisphere] = useState("northern");
+  const [hemisphere] = useState("northern");
 
   useEffect(() => {
     if (!searchText) {
@@ -26,7 +26,6 @@ const App = () => {
   const ResultsDiv = ({ results }) => (
     <div>
       {results.map((result) => {
-        const availablitly = result.time.split(" - ");
         return (
           <div className="critterCard" key={result.name + result.critterNumber}>
             <div className="number">#{result.critterNumber}</div>
@@ -40,8 +39,10 @@ const App = () => {
                 )}
                 {result.available && (
                   <div className="calendar">
-                    {getCalendarMonths(result.available).map((month, index) => (
-                      <span className="month">{month}</span>
+                    {getCalendarMonths(result.available).map((month) => (
+                      <span className="month" key={month}>
+                        {month}
+                      </span>
                     ))}
                   </div>
                 )}
