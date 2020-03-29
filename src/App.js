@@ -15,13 +15,13 @@ const App = () => {
       setResultsList(fullList);
       return;
     }
-    const newResults = resultsList.filter(item =>
+    const newResults = resultsList.filter((item) =>
       item.name.toLowerCase().includes(searchText.toLowerCase())
     );
     setResultsList(newResults);
   }, [searchText]);
 
-  const handleChange = event => setSearchText(event.target.value);
+  const handleChange = (event) => setSearchText(event.target.value);
 
   const changeHemisphere = ({ value }) => {
     setHemisphere(value);
