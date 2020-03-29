@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react";
 
-import { fullList } from "./lists";
+import { bugs, fish } from "./lists.json";
 
 import HemisphereSelect from "./components/hemisphere-select";
 import Results from "./components/results";
-
 import Spacer from "./components/spacer";
+
+const allCritters = bugs.concat(fish);
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
-  const [resultsList, setResultsList] = useState(fullList);
+  const [resultsList, setResultsList] = useState(allCritters);
   const [hemisphere, setHemisphere] = useState("northern");
 
   useEffect(() => {
     if (!searchText) {
-      setResultsList(fullList);
+      setResultsList(allCritters);
       return;
     }
     const newResults = resultsList.filter((item) =>
