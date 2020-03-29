@@ -13,17 +13,17 @@ const App = () => {
       setResultsList(fullList);
       return;
     }
-    const newResults = resultsList.filter(item =>
+    const newResults = resultsList.filter((item) =>
       item.name.toLowerCase().includes(searchText.toLowerCase())
     );
     setResultsList(newResults);
   }, [searchText]);
 
-  const handleChange = event => setSearchText(event.target.value);
+  const handleChange = (event) => setSearchText(event.target.value);
 
   const ResultsDiv = ({ results }) => (
     <div>
-      {results.map(result => {
+      {results.map((result) => {
         return (
           <div className="critterCard" key={result.name + result.critterNumber}>
             <div className="number">#{result.critterNumber}</div>
