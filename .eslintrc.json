@@ -1,5 +1,6 @@
 {
   "parserOptions": {
+    "ecmaVersion": 2019,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
@@ -20,5 +21,10 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:prettier/recommended"
-  ]
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
