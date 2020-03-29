@@ -1,23 +1,39 @@
 const path = require("path");
-const CopyPlugin = require("copy-webpack-plugin");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+
+const isDev = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: ["webpack-hot-middleware/client", "./src/index.js"],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
   },
-  mode: "production",
+  mode: isDev ? "development" : "production",
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-        },
+        use: ["babel-loader"],
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|xvg|jpg|gif)$/,
+        use: [{ loader: "file-loader", options: { esModule: false } }],
       },
     ],
   },
-  plugins: [new CopyPlugin([{ from: "src/static" }])],
+  plugins: [
+    isDev && new webpack.HotModuleReplacementPlugin(),
+    isDev && new webpack.NoEmitOnErrorsPlugin(),
+    isDev && new ReactRefreshPlugin(),
+    new HtmlWebpackPlugin({ filename: "./index.html", template: "index.ejs" }),
+  ].filter(Boolean),
 };
