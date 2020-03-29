@@ -8,8 +8,6 @@ const compiler = webpack(webpackConfig);
 
 const app = express();
 
-app.use(express.static(__dirname + "/dist"));
-
 if (process.env.NODE_ENV === "production") {
   // viewed at http://localhost:8080
   app.get("/", function (req, res) {
