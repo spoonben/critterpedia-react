@@ -2,11 +2,21 @@ import * as React from "react";
 
 import Calendar from "../calendar";
 
+const Name = ({ critterName }) => {
+  return (
+    <div className="name-block">
+      <div className="name-content">
+        <span className="name">{critterName}</span>
+      </div>
+    </div>
+  );
+};
+
 const CritterCard = ({ critter, hemisphere }) => {
   return (
     <div className="critterCard" key={critter.name + critter.critterNumber}>
       <div className="number">#{critter.critterNumber}</div>
-      <div className="name">{critter.name}</div>
+      <Name critterName={critter.name} />
       {critter.shadowSize && <div>Shadow Size{critter.shadowSize}</div>}
       <div>Value: {critter.value}</div>
       <div className="availablitly">
