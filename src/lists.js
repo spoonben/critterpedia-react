@@ -15,8 +15,8 @@ export const bugList = [
     month: "September-June (Northern) / March-December (Southern)",
     available: {
       northern: [9, 10, 11, 12, 1, 2, 3, 4, 5, 6],
-      southern: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 2,
@@ -28,8 +28,8 @@ export const bugList = [
       "September-June (Northern) / March-April, September-December (Southern)",
     available: {
       northern: [9, 10, 11, 12, 1, 2, 3, 4, 5, 6],
-      southern: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 3,
@@ -40,8 +40,8 @@ export const bugList = [
     month: "March-September (Northern) / September-March (Southern)",
     available: {
       northern: [3, 4, 5, 6, 7, 8, 9],
-      southern: [1, 2, 3, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 4,
@@ -52,8 +52,8 @@ export const bugList = [
     month: "March-June (Northern) / September-December (Southern)",
     available: {
       northern: [3, 4, 5, 6],
-      southern: [6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 5,
@@ -64,8 +64,8 @@ export const bugList = [
     month: "April-August (Northern) / October-February (Southern)",
     available: {
       northern: [4, 5, 6, 7, 8],
-      southern: [1, 2, 10, 11, 12]
-    }
+      southern: [1, 2, 10, 11, 12],
+    },
   },
   {
     critterNumber: 6,
@@ -76,8 +76,8 @@ export const bugList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 7,
@@ -88,8 +88,8 @@ export const bugList = [
     month: "May-August (Northern) / December-March (Southern)",
     available: {
       northern: [5, 6, 7, 8],
-      southern: [1, 2, 3, 12]
-    }
+      southern: [1, 2, 3, 12],
+    },
   },
   {
     critterNumber: 8,
@@ -100,8 +100,8 @@ export const bugList = [
     month: "September-November (Northern) / March-May (Southern)",
     available: {
       northern: [9, 10, 11],
-      southern: [3, 4, 5]
-    }
+      southern: [3, 4, 5],
+    },
   },
   {
     critterNumber: 9,
@@ -113,8 +113,8 @@ export const bugList = [
       "June-September, December-March (Northern) / December-March, June-September (Southern)",
     available: {
       northern: [1, 2, 3, 6, 7, 8, 9, 12],
-      southern: [1, 2, 3, 6, 7, 8, 9, 12]
-    }
+      southern: [1, 2, 3, 6, 7, 8, 9, 12],
+    },
   },
   {
     critterNumber: 10,
@@ -125,8 +125,8 @@ export const bugList = [
     month: "April-September (Northern) / November-March (Southern)",
     available: {
       northern: [4, 5, 6, 7, 8, 9],
-      southern: [1, 2, 3, 11, 12]
-    }
+      southern: [1, 2, 3, 11, 12],
+    },
   },
   {
     critterNumber: 11,
@@ -138,8 +138,8 @@ export const bugList = [
       "April-September, December-February (Northern) / November-March, June-August (Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 12],
-      southern: [1, 2, 3, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 12,
@@ -150,8 +150,8 @@ export const bugList = [
     month: "May-September (Northern) / November-March (Southern)",
     available: {
       northern: [5, 6, 7, 8, 9],
-      southern: [1, 2, 3, 11, 12]
-    }
+      southern: [1, 2, 3, 11, 12],
+    },
   },
   {
     critterNumber: 13,
@@ -162,8 +162,8 @@ export const bugList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 14,
@@ -174,8 +174,8 @@ export const bugList = [
     month: "April-September (Northern) / October-March (Southern)",
     available: {
       northern: [4, 5, 6, 7, 8, 9],
-      southern: [1, 2, 3, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 10, 11, 12],
+    },
   },
   {
     critterNumber: 15,
@@ -186,8 +186,8 @@ export const bugList = [
     month: "April-September (Northern) / October-March (Southern)",
     available: {
       northern: [4, 5, 6, 7, 8, 9],
-      southern: [1, 2, 3, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 10, 11, 12],
+    },
   },
   {
     critterNumber: 16,
@@ -198,8 +198,8 @@ export const bugList = [
     month: "April-November (Northern) / November-May (Southern)",
     available: {
       northern: [4, 5, 6, 7, 8, 9, 10, 11],
-      southern: [1, 2, 3, 4, 5, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 11, 12],
+    },
   },
   {
     critterNumber: 17,
@@ -210,8 +210,8 @@ export const bugList = [
     month: "August-November (Northern) / February-May (Southern)",
     available: {
       northern: [8, 9, 10, 11],
-      southern: [2, 3, 4, 5]
-    }
+      southern: [2, 3, 4, 5],
+    },
   },
   {
     critterNumber: 18,
@@ -222,8 +222,8 @@ export const bugList = [
     month: "August-November (Northern) / February-May (Southern)",
     available: {
       northern: [8, 9, 10, 11],
-      southern: [2, 3, 4, 5]
-    }
+      southern: [2, 3, 4, 5],
+    },
   },
   {
     critterNumber: 19,
@@ -234,8 +234,8 @@ export const bugList = [
     month: "July-September (Northern) / January-March (Southern)",
     available: {
       northern: [7, 8, 9],
-      southern: [1, 2, 3]
-    }
+      southern: [1, 2, 3],
+    },
   },
   {
     critterNumber: 20,
@@ -246,8 +246,8 @@ export const bugList = [
     month: "September-November (Northern) / March-May (Southern)",
     available: {
       northern: [9, 10, 11],
-      southern: [3, 4, 5]
-    }
+      southern: [3, 4, 5],
+    },
   },
   {
     critterNumber: 21,
@@ -258,8 +258,8 @@ export const bugList = [
     month: "September-October (Northern) / March-April (Southern)",
     available: {
       northern: [9, 10],
-      southern: [3, 4]
-    }
+      southern: [3, 4],
+    },
   },
   {
     critterNumber: 22,
@@ -270,8 +270,8 @@ export const bugList = [
     month: "March-November (Northern) / September-May (Southern)",
     available: {
       northern: [3, 4, 5, 6, 7, 8, 9, 10, 11],
-      southern: [1, 2, 3, 4, 5, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 23,
@@ -282,8 +282,8 @@ export const bugList = [
     month: "March-November (Northern) / September-May (Southern)",
     available: {
       northern: [3, 4, 5, 6, 7, 8, 9, 10, 11],
-      southern: [1, 2, 3, 4, 5, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 24,
@@ -294,8 +294,8 @@ export const bugList = [
     month: "March-July (Northern) / March-July (Southern)",
     available: {
       northern: [3, 4, 5, 6, 7],
-      southern: [3, 4, 5, 6, 7]
-    }
+      southern: [3, 4, 5, 6, 7],
+    },
   },
   {
     critterNumber: 25,
@@ -306,8 +306,8 @@ export const bugList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 26,
@@ -318,8 +318,8 @@ export const bugList = [
     month: "July-August (Northern) / January-February (Southern)",
     available: {
       northern: [7, 8],
-      southern: [1, 2]
-    }
+      southern: [1, 2],
+    },
   },
   {
     critterNumber: 27,
@@ -330,8 +330,8 @@ export const bugList = [
     month: "July-August (Northern) / January-February (Southern)",
     available: {
       northern: [7, 8],
-      southern: [1, 2]
-    }
+      southern: [1, 2],
+    },
   },
   {
     critterNumber: 28,
@@ -342,8 +342,8 @@ export const bugList = [
     month: "July-August (Northern) / January-February (Southern)",
     available: {
       northern: [7, 8],
-      southern: [1, 2]
-    }
+      southern: [1, 2],
+    },
   },
   {
     critterNumber: 29,
@@ -354,8 +354,8 @@ export const bugList = [
     month: "August-September (Northern) / February-March (Southern)",
     available: {
       northern: [8, 9],
-      southern: [2, 3]
-    }
+      southern: [2, 3],
+    },
   },
   {
     critterNumber: 30,
@@ -366,8 +366,8 @@ export const bugList = [
     month: "July-August (Northern) / January-February (Southern)",
     available: {
       northern: [7, 8],
-      southern: [1, 2]
-    }
+      southern: [1, 2],
+    },
   },
   {
     critterNumber: 31,
@@ -378,8 +378,8 @@ export const bugList = [
     month: "July-August (Northern) / January-February (Southern)",
     available: {
       northern: [7, 8],
-      southern: [1, 2]
-    }
+      southern: [1, 2],
+    },
   },
   {
     critterNumber: 32,
@@ -390,8 +390,8 @@ export const bugList = [
     month: "September-October (Northern) / March-April (Southern)",
     available: {
       northern: [9, 10],
-      southern: [3, 4]
-    }
+      southern: [3, 4],
+    },
   },
   {
     critterNumber: 33,
@@ -402,8 +402,8 @@ export const bugList = [
     month: "April-October (Northern) / October-April (Southern)",
     available: {
       northern: [4, 5, 6, 7, 8, 9, 10],
-      southern: [1, 2, 3, 4, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 10, 11, 12],
+    },
   },
   {
     critterNumber: 34,
@@ -414,8 +414,8 @@ export const bugList = [
     month: "May-October (Northern) / November-April (Southern)",
     available: {
       northern: [5, 6, 7, 8, 9, 10],
-      southern: [1, 2, 3, 4, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 11, 12],
+    },
   },
   {
     critterNumber: 35,
@@ -426,8 +426,8 @@ export const bugList = [
     month: "November-February (Northern) / May-August (Southern)",
     available: {
       northern: [1, 2, 11, 12],
-      southern: [5, 6, 7, 8]
-    }
+      southern: [5, 6, 7, 8],
+    },
   },
   {
     critterNumber: 36,
@@ -438,8 +438,8 @@ export const bugList = [
     month: "June (Northern) / December (Southern)",
     available: {
       northern: [6],
-      southern: [12]
-    }
+      southern: [12],
+    },
   },
   {
     critterNumber: 37,
@@ -450,8 +450,8 @@ export const bugList = [
     month: "November-May (Northern) / May-November (Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 11, 12],
-      southern: [5, 6, 7, 8, 9, 10, 11]
-    }
+      southern: [5, 6, 7, 8, 9, 10, 11],
+    },
   },
   {
     critterNumber: 38,
@@ -462,8 +462,8 @@ export const bugList = [
     month: "May-September (Northern) / November-March (Southern)",
     available: {
       northern: [5, 6, 7, 8, 9],
-      southern: [1, 2, 3, 11, 12]
-    }
+      southern: [1, 2, 3, 11, 12],
+    },
   },
   {
     critterNumber: 39,
@@ -474,8 +474,8 @@ export const bugList = [
     month: "May-September (Northern) / November-March (Southern)",
     available: {
       northern: [5, 6, 7, 8, 9],
-      southern: [1, 2, 3, 11, 12]
-    }
+      southern: [1, 2, 3, 11, 12],
+    },
   },
   {
     critterNumber: 40,
@@ -486,8 +486,8 @@ export const bugList = [
     month: "April-September (Northern) / October-March (Southern)",
     available: {
       northern: [4, 5, 6, 7, 8, 9],
-      southern: [1, 2, 3, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 10, 11, 12],
+    },
   },
   {
     critterNumber: 41,
@@ -498,8 +498,8 @@ export const bugList = [
     month: "March-November (Northern) / September-May (Southern)",
     available: {
       northern: [3, 4, 5, 6, 7, 8, 9, 10, 11],
-      southern: [1, 2, 3, 4, 5, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 42,
@@ -510,8 +510,8 @@ export const bugList = [
     month: "March-November (Northern) / September-May (Southern)",
     available: {
       northern: [3, 4, 5, 6, 7, 8, 9, 10, 11],
-      southern: [1, 2, 3, 4, 5, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 43,
@@ -523,8 +523,8 @@ export const bugList = [
       "March-June, October (Northern) / September-December, April (Southern)",
     available: {
       northern: [3, 4, 5, 6],
-      southern: [9, 10, 11, 12]
-    }
+      southern: [9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 44,
@@ -535,8 +535,8 @@ export const bugList = [
     month: "February-November (Northern) / August-May (Southern)",
     available: {
       northern: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      southern: [1, 2, 3, 4, 5, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 45,
@@ -547,8 +547,8 @@ export const bugList = [
     month: "April-August (Northern) / October-February (Southern)",
     available: {
       northern: [4, 5, 6, 7, 8],
-      southern: [1, 2, 10, 11, 12]
-    }
+      southern: [1, 2, 10, 11, 12],
+    },
   },
   {
     critterNumber: 46,
@@ -560,8 +560,8 @@ export const bugList = [
       "May-June, September-November (Northern) / November-December, March-April (Southern)",
     available: {
       northern: [5, 6],
-      southern: [9, 10, 11]
-    }
+      southern: [9, 10, 11],
+    },
   },
   {
     critterNumber: 47,
@@ -572,8 +572,8 @@ export const bugList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: 48,
@@ -581,7 +581,7 @@ export const bugList = [
     location: "On tree stumps",
     value: "3,000",
     time: "All day",
-    month: "May-September (Northern) / November-March (Southern)"
+    month: "May-September (Northern) / November-March (Southern)",
   },
   {
     critterNumber: 49,
@@ -589,7 +589,7 @@ export const bugList = [
     location: "",
     value: "",
     time: "All day",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 50,
@@ -597,7 +597,7 @@ export const bugList = [
     location: "On ground",
     value: "",
     time: "",
-    month: "December-February (Northern) / June-August (Southern)"
+    month: "December-February (Northern) / June-August (Southern)",
   },
   {
     critterNumber: 51,
@@ -605,7 +605,7 @@ export const bugList = [
     location: "On ground",
     value: 300,
     time: "All day",
-    month: "July-September (Northern) / January-March (Southern)"
+    month: "July-September (Northern) / January-March (Southern)",
   },
   {
     critterNumber: 52,
@@ -613,7 +613,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "11 p.m. - 8 a.m.",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 53,
@@ -621,7 +621,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "All day",
-    month: "June-August (Northern) / December-February (Southern)"
+    month: "June-August (Northern) / December-February (Southern)",
   },
   {
     critterNumber: 54,
@@ -629,7 +629,7 @@ export const bugList = [
     location: "On trees",
     value: "8,000",
     time: "5 p.m. - 8 a.m.",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: 55,
@@ -637,7 +637,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "All day",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 56,
@@ -645,7 +645,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "All day",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 57,
@@ -653,7 +653,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "11 p.m. - 8 a.m.",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 58,
@@ -661,7 +661,7 @@ export const bugList = [
     location: "On trees",
     value: "6,000",
     time: "7 p.m. - 8 a.m.",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: 59,
@@ -669,7 +669,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "5 p.m. - 8 a.m.",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 60,
@@ -677,7 +677,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "5 p.m. - 8 a.m.",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 61,
@@ -685,7 +685,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "5 p.m. - 8 a.m.",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 62,
@@ -693,7 +693,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "5 p.m. - 8 a.m.",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 63,
@@ -701,7 +701,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "5 p.m. - 8 a.m.",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 64,
@@ -709,7 +709,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "5 p.m. - 8 a.m.",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 65,
@@ -717,7 +717,7 @@ export const bugList = [
     location: "On trees",
     value: "",
     time: "5 p.m. - 8 a.m.",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: 66,
@@ -725,7 +725,7 @@ export const bugList = [
     location: "Falls from shaking trees",
     value: "",
     time: "4 a.m. - 8 a.m., 5 p.m. - 7 p.m.",
-    month: "July-November (Northern) / January-May (Southern)"
+    month: "July-November (Northern) / January-May (Southern)",
   },
   {
     critterNumber: 67,
@@ -733,7 +733,7 @@ export const bugList = [
     location: "Near trees, disguised as furniture leaf",
     value: 600,
     time: "All day",
-    month: "July-August (Northern) / January-March (Southern)"
+    month: "July-August (Northern) / January-March (Southern)",
   },
   {
     critterNumber: 68,
@@ -741,7 +741,7 @@ export const bugList = [
     location: "Falls from shaking trees",
     value: 600,
     time: "All day",
-    month: "Year-round (Northern and Southern)"
+    month: "Year-round (Northern and Southern)",
   },
   {
     critterNumber: 69,
@@ -749,7 +749,7 @@ export const bugList = [
     location: "On rotten food",
     value: "",
     time: "All day",
-    month: "Year-round (Northern and Southern)"
+    month: "Year-round (Northern and Southern)",
   },
   {
     critterNumber: 70,
@@ -757,7 +757,7 @@ export const bugList = [
     location: "Beach",
     value: "1,000",
     time: "7 p.m. - 8 a.m.",
-    month: "Year-round (Northern and Southern)"
+    month: "Year-round (Northern and Southern)",
   },
   {
     critterNumber: 71,
@@ -765,7 +765,7 @@ export const bugList = [
     location: "On rocks at beach",
     value: 200,
     time: "All day",
-    month: "Year-round (Northern and Southern)"
+    month: "Year-round (Northern and Southern)",
   },
   {
     critterNumber: 72,
@@ -773,7 +773,7 @@ export const bugList = [
     location: "On trash items",
     value: "",
     time: "All day",
-    month: "Year-round (Northern and Southern)"
+    month: "Year-round (Northern and Southern)",
   },
   {
     critterNumber: 73,
@@ -781,7 +781,7 @@ export const bugList = [
     location: "Flying",
     value: 130,
     time: "5 p.m. - 4 a.m.",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: 74,
@@ -789,7 +789,7 @@ export const bugList = [
     location: "On villagers",
     value: "",
     time: "All day",
-    month: "April-November (Northern) / October-May (Southern)"
+    month: "April-November (Northern) / October-May (Southern)",
   },
   {
     critterNumber: 75,
@@ -797,7 +797,7 @@ export const bugList = [
     location: "On rocks (raining)",
     value: 250,
     time: "All day",
-    month: "Year-round (Northern and Southern)"
+    month: "Year-round (Northern and Southern)",
   },
   {
     critterNumber: 76,
@@ -805,7 +805,7 @@ export const bugList = [
     location: "Hit rocks",
     value: 250,
     time: "11 p.m. - 4 p.m.",
-    month: "September-June (Northern) / March-December (Southern)"
+    month: "September-June (Northern) / March-December (Southern)",
   },
   {
     critterNumber: 77,
@@ -813,7 +813,7 @@ export const bugList = [
     location: "Hit rocks",
     value: 300,
     time: "4 p.m. - 11 p.m.",
-    month: "September-June (Northern) / March-December (Southern)"
+    month: "September-June (Northern) / March-December (Southern)",
   },
   {
     critterNumber: 78,
@@ -821,7 +821,7 @@ export const bugList = [
     location: "Falls from shaking trees",
     value: 480,
     time: "7 p.m. - 8 a.m.",
-    month: "Year-round (Northern and Southern)"
+    month: "Year-round (Northern and Southern)",
   },
   {
     critterNumber: 79,
@@ -830,7 +830,7 @@ export const bugList = [
     value: "8,000",
     time: "7 p.m. - 4 a.m.",
     month: "November-April (Northern) / May-October (Southern)",
-    img: "tarantula"
+    img: "tarantula",
   },
   {
     critterNumber: 80,
@@ -838,8 +838,8 @@ export const bugList = [
     location: "On ground",
     value: "8,000",
     time: "7 p.m. - 4 a.m.",
-    month: "May-October (Northern) / November-April (Southern)"
-  }
+    month: "May-October (Northern) / November-April (Southern)",
+  },
 ];
 
 export const fishList = [
@@ -850,7 +850,7 @@ export const fishList = [
     shadowSize: "Smallest",
     value: "900",
     time: "All day",
-    month: "November-March (Northern) / May-September (Southern)"
+    month: "November-March (Northern) / May-September (Southern)",
   },
   {
     critterNumber: "2",
@@ -862,8 +862,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "3",
@@ -875,8 +875,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "4",
@@ -888,8 +888,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "5",
@@ -901,8 +901,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "6",
@@ -914,8 +914,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "7",
@@ -927,8 +927,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "8",
@@ -940,8 +940,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "9",
@@ -953,8 +953,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "10",
@@ -963,7 +963,7 @@ export const fishList = [
     shadowSize: "Smallest",
     value: "300",
     time: "All day",
-    month: "April-August (Northern) / October-February (Southern)"
+    month: "April-August (Northern) / October-February (Southern)",
   },
   {
     critterNumber: "11",
@@ -972,7 +972,7 @@ export const fishList = [
     shadowSize: "Medium",
     value: "200",
     time: "All day",
-    month: "April-September (Northern) / October-March (Southern)"
+    month: "April-September (Northern) / October-March (Southern)",
   },
   {
     critterNumber: "12",
@@ -981,7 +981,7 @@ export const fishList = [
     shadowSize: "Large",
     value: "3,750",
     time: "4 p.m. - 9 a.m.",
-    month: "August-September (Northern) / February-March (Southern)"
+    month: "August-September (Northern) / February-March (Southern)",
   },
   {
     critterNumber: "13",
@@ -990,7 +990,7 @@ export const fishList = [
     shadowSize: "X Large",
     value: "5,000",
     time: "9 a.m. - 4 a.m.",
-    month: "April-October (Northern) / October-April (Southern)"
+    month: "April-October (Northern) / October-April (Southern)",
   },
   {
     critterNumber: "14",
@@ -999,7 +999,7 @@ export const fishList = [
     shadowSize: "Smallest",
     value: "100",
     time: "All day",
-    month: "March-July (Northern) / September-January (Southern)"
+    month: "March-July (Northern) / September-January (Southern)",
   },
   {
     critterNumber: "15",
@@ -1008,7 +1008,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "120",
     time: "All day",
-    month: "May-August (Northern) / November-Feburary (Southern)"
+    month: "May-August (Northern) / November-Feburary (Southern)",
   },
   {
     critterNumber: "16",
@@ -1020,8 +1020,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "17",
@@ -1030,7 +1030,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "400",
     time: "All day",
-    month: "March-May (Northern) / September-November (Southern)"
+    month: "March-May (Northern) / September-November (Southern)",
   },
   {
     critterNumber: "18",
@@ -1039,7 +1039,7 @@ export const fishList = [
     shadowSize: "",
     value: "800",
     time: "4 p.m. - 9 a.m.",
-    month: "May-October (Northern) / November-April (Southern)"
+    month: "May-October (Northern) / November-April (Southern)",
   },
   {
     critterNumber: "19",
@@ -1048,7 +1048,7 @@ export const fishList = [
     shadowSize: "X Large",
     value: "",
     time: "9 a.m. - 4 p.m.",
-    month: "June-August (Northern) / December-February (Southern)"
+    month: "June-August (Northern) / December-February (Southern)",
   },
   {
     critterNumber: "20",
@@ -1060,8 +1060,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "21",
@@ -1070,7 +1070,7 @@ export const fishList = [
     shadowSize: "Medium",
     value: "300",
     time: "All day",
-    month: "October-March (Northern) / April-September (Southern)"
+    month: "October-March (Northern) / April-September (Southern)",
   },
   {
     critterNumber: "22",
@@ -1082,8 +1082,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "23",
@@ -1092,7 +1092,7 @@ export const fishList = [
     shadowSize: "",
     value: "800",
     time: "All day",
-    month: "June-October (Northern) / December-April (Southern)"
+    month: "June-October (Northern) / December-April (Southern)",
   },
   {
     critterNumber: "24",
@@ -1101,7 +1101,7 @@ export const fishList = [
     shadowSize: "X Large",
     value: "1,800",
     time: "All day",
-    month: "September-December (Northern) / March-June (Southern)"
+    month: "September-December (Northern) / March-June (Southern)",
   },
   {
     critterNumber: "25",
@@ -1110,7 +1110,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "",
     time: "All day",
-    month: "December-February (Northern) / June-August (Southern)"
+    month: "December-February (Northern) / June-August (Southern)",
   },
   {
     critterNumber: "26",
@@ -1119,7 +1119,7 @@ export const fishList = [
     shadowSize: "Medium",
     value: "900",
     time: "All day",
-    month: "July-September (Northern) / January-March (Southern)"
+    month: "July-September (Northern) / January-March (Southern)",
   },
   {
     critterNumber: "27",
@@ -1129,7 +1129,7 @@ export const fishList = [
     value: "1,000",
     time: "All day",
     month:
-      "March-June, September-November (Northern) / March-May, September-December (Southern)"
+      "March-June, September-November (Northern) / March-May, September-December (Southern)",
   },
   {
     critterNumber: "28",
@@ -1139,7 +1139,7 @@ export const fishList = [
     value: "3,800",
     time: "4 p.m. - 9 a.m.",
     month:
-      "March-June, September-November (Northern) / March-May, September-December (Southern)"
+      "March-June, September-November (Northern) / March-May, September-December (Southern)",
   },
   {
     critterNumber: "29",
@@ -1149,7 +1149,7 @@ export const fishList = [
     value: "15,000",
     time: "4 p.m. - 9 a.m.",
     month:
-      "March-June, September-November (Northern) / March-May, September-December (Southern)"
+      "March-June, September-November (Northern) / March-May, September-December (Southern)",
   },
   {
     critterNumber: "30",
@@ -1158,7 +1158,7 @@ export const fishList = [
     shadowSize: "Largest",
     value: "15,000",
     time: "4 p.m. - 9 a.m.",
-    month: "December-March (Northern) / June-September (Southern)"
+    month: "December-March (Northern) / June-September (Southern)",
   },
   {
     critterNumber: "31",
@@ -1167,7 +1167,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "700",
     time: "All day",
-    month: "September (Northern) / March (Southern)"
+    month: "September (Northern) / March (Southern)",
   },
   {
     critterNumber: "32",
@@ -1176,7 +1176,7 @@ export const fishList = [
     shadowSize: "Smallest",
     value: "1,800",
     time: "All day",
-    month: "September (Northern) / March (Southern)"
+    month: "September (Northern) / March (Southern)",
   },
   {
     critterNumber: "33",
@@ -1185,7 +1185,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "2,000",
     time: "4 p.m. - 9 a.m.",
-    month: "September-November (Northern) / March-May (Southern)"
+    month: "September-November (Northern) / March-May (Southern)",
   },
   {
     critterNumber: "34",
@@ -1194,7 +1194,7 @@ export const fishList = [
     shadowSize: "Smallest",
     value: "1,300",
     time: "9 a.m. - 4 p.m.",
-    month: "April-November (Northern) / October-May (Southern)"
+    month: "April-November (Northern) / October-May (Southern)",
   },
   {
     critterNumber: "35",
@@ -1203,7 +1203,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "1,500",
     time: "9 a.m. - 4 p.m.",
-    month: "May-September (Northern) / November-March (Southern)"
+    month: "May-September (Northern) / November-March (Southern)",
   },
   {
     critterNumber: "36",
@@ -1212,7 +1212,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "3,000",
     time: "4 p.m. - 9 a.m.",
-    month: "May-October (Northern) / November-April (Southern)"
+    month: "May-October (Northern) / November-April (Southern)",
   },
   {
     critterNumber: "37",
@@ -1221,7 +1221,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "2,500",
     time: "9 a.m. - 4 p.m.",
-    month: "May-October (Northern) / November-April (Southern)"
+    month: "May-October (Northern) / November-April (Southern)",
   },
   {
     critterNumber: "38",
@@ -1230,7 +1230,7 @@ export const fishList = [
     shadowSize: "Smallest",
     value: "500",
     time: "9 a.m. - 4 p.m.",
-    month: "April-November (Northern) / October-May (Southern)"
+    month: "April-November (Northern) / October-May (Southern)",
   },
   {
     critterNumber: "39",
@@ -1239,7 +1239,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "800",
     time: "9 a.m. - 4 p.m.",
-    month: "May-October (Northern) / November-April (Southern)"
+    month: "May-October (Northern) / November-April (Southern)",
   },
   {
     critterNumber: "40",
@@ -1248,7 +1248,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "2,500",
     time: "9 a.m. - 4 p.m., 9 p.m. - 4 a.m.",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: "41",
@@ -1257,7 +1257,7 @@ export const fishList = [
     shadowSize: "Large",
     value: "10,000",
     time: "4 p.m. - 9 a.m.",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: "42",
@@ -1266,7 +1266,7 @@ export const fishList = [
     shadowSize: "X Large",
     value: "15,000",
     time: "4 a.m - 9 p.m.",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: "43",
@@ -1275,7 +1275,7 @@ export const fishList = [
     shadowSize: "Largest",
     value: "6,000",
     time: "4 p.m. - 9 a.m.",
-    month: "July-October (Northern) / January-April (Southern)"
+    month: "July-October (Northern) / January-April (Southern)",
   },
   {
     critterNumber: "44",
@@ -1284,7 +1284,7 @@ export const fishList = [
     shadowSize: "",
     value: "10,000",
     time: "4 p.m. - 9 a.m.",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: "45",
@@ -1293,7 +1293,7 @@ export const fishList = [
     shadowSize: "Large",
     value: "4,000",
     time: "9 p.m. - 4 a.m.",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: "46",
@@ -1302,7 +1302,7 @@ export const fishList = [
     shadowSize: "Largest",
     value: "10,000",
     time: "All day",
-    month: "September-March (Northern) / March-September (Southern)"
+    month: "September-March (Northern) / March-September (Southern)",
   },
   {
     critterNumber: "47",
@@ -1311,7 +1311,7 @@ export const fishList = [
     shadowSize: "Smallest",
     value: "1,000",
     time: "All day",
-    month: "December-March (Northern) / June-September (Southern)"
+    month: "December-March (Northern) / June-September (Southern)",
   },
   {
     critterNumber: "48",
@@ -1320,7 +1320,7 @@ export const fishList = [
     shadowSize: "Smallest",
     value: "1,100",
     time: "All day",
-    month: "April-November (Northern) / October-May (Southern)"
+    month: "April-November (Northern) / October-May (Southern)",
   },
   {
     critterNumber: "49",
@@ -1329,7 +1329,7 @@ export const fishList = [
     shadowSize: "Smallest",
     value: "650",
     time: "All day",
-    month: "April-September (Northern) / October-March (Southern)"
+    month: "April-September (Northern) / October-March (Southern)",
   },
   {
     critterNumber: "50",
@@ -1338,7 +1338,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "1,000",
     time: "All day",
-    month: "April-September (Northern) / October-March (Southern)"
+    month: "April-September (Northern) / October-March (Southern)",
   },
   {
     critterNumber: "51",
@@ -1347,7 +1347,7 @@ export const fishList = [
     shadowSize: "Small",
     value: "1,000",
     time: "All day",
-    month: "April-September (Northern) / October-March (Southern)"
+    month: "April-September (Northern) / October-March (Southern)",
   },
   {
     critterNumber: "52",
@@ -1356,7 +1356,7 @@ export const fishList = [
     shadowSize: "Largest",
     value: "10,000",
     time: "4 a.m. - 9 p.m.",
-    month: "July-August (Northern) / January-February (Southern)"
+    month: "July-August (Northern) / January-February (Southern)",
   },
   {
     critterNumber: "53",
@@ -1365,7 +1365,7 @@ export const fishList = [
     shadowSize: "Medium",
     value: "500",
     time: "All day",
-    month: "April-November (Northern) / October-May (Southern)"
+    month: "April-November (Northern) / October-May (Southern)",
   },
   {
     critterNumber: "54",
@@ -1374,7 +1374,7 @@ export const fishList = [
     shadowSize: "Medium",
     value: "",
     time: "6 p.m. - 4 a.m.",
-    month: "November-February (Northern) / May-August (Southern)"
+    month: "November-February (Northern) / May-August (Southern)",
   },
   {
     critterNumber: "55",
@@ -1383,7 +1383,7 @@ export const fishList = [
     shadowSize: "Medium",
     value: "250",
     time: "All day",
-    month: "July-September (Northern) / January-March (Southern)"
+    month: "July-September (Northern) / January-March (Southern)",
   },
   {
     critterNumber: "56",
@@ -1395,8 +1395,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "57",
@@ -1408,8 +1408,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "58",
@@ -1418,7 +1418,7 @@ export const fishList = [
     shadowSize: "Medium",
     value: "5,000",
     time: "All day",
-    month: "March-November (Northern) / September-May (Southern)"
+    month: "March-November (Northern) / September-May (Southern)",
   },
   {
     critterNumber: "59",
@@ -1430,8 +1430,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "60",
@@ -1443,8 +1443,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "61",
@@ -1453,7 +1453,7 @@ export const fishList = [
     shadowSize: "Medium",
     value: "300",
     time: "All day",
-    month: "October-April (Northern) / April-October (Southern)"
+    month: "October-April (Northern) / April-October (Southern)",
   },
   {
     critterNumber: "62",
@@ -1465,8 +1465,8 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
   },
   {
     critterNumber: "63",
@@ -1475,7 +1475,7 @@ export const fishList = [
     shadowSize: "Medium",
     value: "500",
     time: "All day",
-    month: "December-August (Northern) / June-February (Southern)"
+    month: "December-August (Northern) / June-February (Southern)",
   },
   {
     critterNumber: "64",
@@ -1484,7 +1484,7 @@ export const fishList = [
     shadowSize: "X Large",
     value: "2,000",
     time: "All day",
-    month: "August-October (Northern) / February-April (Southern)"
+    month: "August-October (Northern) / February-April (Southern)",
   },
   {
     critterNumber: "65",
@@ -1493,7 +1493,7 @@ export const fishList = [
     shadowSize: "Narrow",
     value: "600",
     time: "All day",
-    month: "June-October (Northern) / December-April (Southern)"
+    month: "June-October (Northern) / December-April (Southern)",
   },
   {
     critterNumber: "66",
@@ -1502,7 +1502,7 @@ export const fishList = [
     shadowSize: "X Large",
     value: "7,000",
     time: "All day",
-    month: "November-April (Northern) / May-October (Southern)"
+    month: "November-April (Northern) / May-October (Southern)",
   },
   {
     critterNumber: "67",
@@ -1512,7 +1512,7 @@ export const fishList = [
     value: "10,000",
     time: "All day",
     month:
-      "July-September, November-April (Northern) / January-March, May-November (Southern)"
+      "July-September, November-April (Northern) / January-March, May-November (Southern)",
   },
   {
     critterNumber: "68",
@@ -1521,7 +1521,7 @@ export const fishList = [
     shadowSize: "Large",
     value: "4,500",
     time: "All day",
-    month: "May-October (Northern) / November-April (Southern)"
+    month: "May-October (Northern) / November-April (Southern)",
   },
   {
     critterNumber: "69",
@@ -1530,7 +1530,7 @@ export const fishList = [
     shadowSize: "Large",
     value: "6,000",
     time: "All day",
-    month: "May-October (Northern) / November-April (Southern)"
+    month: "May-October (Northern) / November-April (Southern)",
   },
   {
     critterNumber: "70",
@@ -1539,7 +1539,7 @@ export const fishList = [
     shadowSize: "Largest (Fin)",
     value: "4,000",
     time: "4 a.m. - 9 p.m.",
-    month: "July-September (Northern) / January-March (Southern)"
+    month: "July-September (Northern) / January-March (Southern)",
   },
   {
     critterNumber: "71",
@@ -1548,7 +1548,7 @@ export const fishList = [
     shadowSize: "X Large",
     value: "3,000",
     time: "4 a.m. - 9 p.m.",
-    month: "August-November (Northern) / February-May (Southern)"
+    month: "August-November (Northern) / February-May (Southern)",
   },
   {
     critterNumber: "72",
@@ -1557,7 +1557,7 @@ export const fishList = [
     shadowSize: "Largest (fin)",
     value: "12,000",
     time: "4 p.m. - 9 a.m.",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: "73",
@@ -1566,7 +1566,7 @@ export const fishList = [
     shadowSize: "Largest (fin)",
     value: "8,000",
     time: "4 p.m. - 9 a.m.",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: "74",
@@ -1575,7 +1575,7 @@ export const fishList = [
     shadowSize: "Largest (fin)",
     value: "15,000",
     time: "4 p.m. - 9 a.m.",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: "75",
@@ -1584,7 +1584,7 @@ export const fishList = [
     shadowSize: "Largest (fin)",
     value: "13,000",
     time: "All day",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: "76",
@@ -1593,7 +1593,7 @@ export const fishList = [
     shadowSize: "(Fin)",
     value: "1,500",
     time: "All day",
-    month: "June-September (Northern) / December-March (Southern)"
+    month: "June-September (Northern) / December-March (Southern)",
   },
   {
     critterNumber: "77",
@@ -1602,7 +1602,7 @@ export const fishList = [
     shadowSize: "Large",
     value: "2,500",
     time: "4 p.m. - 9 a.m.",
-    month: "November-March (Northern) / May-September (Southern)"
+    month: "November-March (Northern) / May-September (Southern)",
   },
   {
     critterNumber: "78",
@@ -1611,7 +1611,7 @@ export const fishList = [
     shadowSize: "Largest",
     value: "9,000",
     time: "All day",
-    month: "December-May (Northern) / June-November (Southern)"
+    month: "December-May (Northern) / June-November (Southern)",
   },
   {
     critterNumber: "79",
@@ -1623,9 +1623,9 @@ export const fishList = [
     month: "Year-round (Northern and Southern)",
     available: {
       northern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    }
-  }
+      southern: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
+  },
 ];
 
 export const fullList = fishList.concat(bugList);
