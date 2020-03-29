@@ -7,7 +7,6 @@ import Calendar from "./components/calendar";
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [resultsList, setResultsList] = useState(fullList);
-  const [hemisphere] = useState("northern");
 
   useEffect(() => {
     if (!searchText) {
