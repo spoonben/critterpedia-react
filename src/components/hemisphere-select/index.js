@@ -12,10 +12,10 @@ const HemisphereSelect = ({ selectedOption, handleChange }) => {
     <>
       <Select
         options={options}
-        value={selectedOption}
         onChange={handleChange}
-        placeHolder={selectedOption}
         className="hemisphereSelect"
+        defaultValue={selectedOption}
+        placeholder="Hemisphere"
       />
     </>
   );
