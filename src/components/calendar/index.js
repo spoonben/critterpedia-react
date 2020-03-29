@@ -1,20 +1,34 @@
 import * as React from "react";
 
-import { monthMap } from "../../lists";
+const monthNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-const getCalendarMonths = (availablitly, hemisphere) =>
-  availablitly[hemisphere].map((month) => monthMap[month]);
-
-const Month = ({ month }) => {
-  return <span className="month">{month}</span>;
+const monthMap = {
+  1: "Jan.",
+  2: "Feb.",
+  3: "Mar.",
+  4: "Apr.",
+  5: "May.",
+  6: "Jun.",
+  7: "Jul.",
+  8: "Aug.",
+  9: "Sep.",
+  10: "Oct.",
+  11: "Nov.",
+  12: "Dec.",
 };
 
-const Calendar = ({ availablitly, hemisphere }) => {
+const Month = ({ month, available }) => {
+  return <span className={`month ${available && "available"}`}>{month}</span>;
+};
+
+const Calendar = ({ availablitly }) => {
   return (
     <div className="calendar">
-      {getCalendarMonths(availablitly, hemisphere).map((month, index) => (
-        <Month month={month} />
-      ))}
+      {monthNumbers.map((num) => {
+        return (
+          <Month month={monthMap[num]} available={availablitly.includes(num)} />
+        );
+      })}
     </div>
   );
 };

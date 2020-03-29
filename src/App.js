@@ -37,10 +37,7 @@ const App = () => {
                   <span className="card-title">Seasonability</span>
                 )}
                 {result.available && (
-                  <Calendar
-                    availablitly={result.available}
-                    hemisphere={hemisphere}
-                  />
+                  <Calendar availablitly={result.available["northern"]} />
                 )}
               </div>
               <div className="availablitly-spacer" />
