@@ -1,11 +1,4 @@
-const range = (start, end, cycleSize) => {
-  if (end < start) return range(start, cycleSize + end, cycleSize);
-
-  return new Array(end - start + 1)
-    .fill()
-    .map((_, i) => ((start + i - 1) % cycleSize) + 1);
-};
-exports.range = range;
+const { range, uniq, flatten } = require("./util");
 
 const monthToNum = (month) => {
   switch (month) {
@@ -37,9 +30,6 @@ const monthToNum = (month) => {
       throw new Error(`Invalid month: ${month}`);
   }
 };
-
-const flatten = (arrs) => [].concat(...arrs);
-const uniq = (arr) => [...new Set(arr)];
 
 const strRangesToNumRange = (rawStr) => {
   const strRanges = rawStr.split(", ");
