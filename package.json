@@ -6,7 +6,7 @@
     "lint": "eslint src",
     "test": "jest",
     "build": "NODE_ENV=production webpack",
-    "dev": "webpack-dev-server --hot",
+    "dev": "NODE_ENV=development webpack-dev-server --hot",
     "start": "node server.js"
   },
   "repository": "https://github.com/spoonben/critterpedia-react",
