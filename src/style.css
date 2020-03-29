@@ -92,3 +92,9 @@ h1 {
 .available {
 	background: #bfba08;
 }
+
+.hemisphereSelect {
+	font-family: "Spectral", serif;
+	font-size: 16px;
+	/*width: 200px;*/
+}

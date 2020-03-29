@@ -26,7 +26,11 @@ const Calendar = ({ availablitly }) => {
     <div className="calendar">
       {monthNumbers.map((num) => {
         return (
-          <Month month={monthMap[num]} available={availablitly.includes(num)} />
+          <Month
+            key={num}
+            month={monthMap[num]}
+            available={availablitly.includes(num)}
+          />
         );
       })}
     </div>
