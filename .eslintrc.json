@@ -8,7 +8,8 @@
   },
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "rules": {
     "strict": [2, "never"],
@@ -16,7 +17,7 @@
     "react/jsx-uses-vars": 2,
     "react/react-in-jsx-scope": 2
   },
-  "plugins": ["react"],
+  "plugins": ["react", "jest"],
   "extends": ["eslint:recommended", "plugin:prettier/recommended"],
   "settings": {
     "react": {

@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "lint": "eslint src",
+    "test": "jest",
     "build": "NODE_ENV=production webpack",
     "dev": "webpack-dev-server --hot",
     "start": "node server.js"
@@ -19,16 +20,19 @@
     "@babel/preset-react": "^7.9.4",
     "@babel/register": "^7.9.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.2.0",
+    "babel-jest": "~25.2.3",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^0.28.11",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-jest": "~23.8.2",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.0.3",
     "husky": "^4.2.3",
+    "jest": "~25.2.3",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.5.2",
     "prettier": "^2.0.2",
@@ -51,7 +55,7 @@
   "main": "server.js",
   "husky": {
     "hooks": {
-      "pre-push": "npm run lint"
+      "pre-push": "npm run lint && npm run test"
     }
   }
 }
