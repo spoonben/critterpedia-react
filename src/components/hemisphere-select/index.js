@@ -7,14 +7,14 @@ const options = [
   { value: "southern", label: "Southern" },
 ];
 
-const HemisphereSelect = ({ selectedOption, handleChange }) => {
+const HemisphereSelect = ({ handleChange }) => {
   return (
     <>
       <Select
         options={options}
         onChange={handleChange}
         className="hemisphereSelect"
-        defaultValue={selectedOption}
+        defaultValue={{ value: "northern", label: "Northern" }}
         placeholder="Hemisphere"
       />
     </>

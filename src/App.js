@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useMemo } from "react";
 
 import { bugs, fish } from "./lists.json";
 
@@ -10,19 +10,17 @@ const allCritters = bugs.concat(fish);
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
-  const [resultsList, setResultsList] = useState(allCritters);
   const [hemisphere, setHemisphere] = useState("northern");
 
-  useEffect(() => {
-    if (!searchText) {
-      setResultsList(allCritters);
-      return;
-    }
-    const newResults = resultsList.filter((item) =>
-      item.name.toLowerCase().includes(searchText.toLowerCase())
-    );
-    setResultsList(newResults);
-  }, [searchText]);
+  const resultsList = useMemo(
+    () =>
+      searchText
+        ? allCritters.filter((item) =>
+            item.name.toLowerCase().includes(searchText.toLowerCase())
+          )
+        : allCritters,
+    [searchText]
+  );
 
   const handleChange = (event) => setSearchText(event.target.value);
 
@@ -43,10 +41,7 @@ const App = () => {
           ></input>
         </div>
         <Spacer width="40px" />
-        <HemisphereSelect
-          selectedOption={hemisphere}
-          handleChange={changeHemisphere}
-        />
+        <HemisphereSelect handleChange={changeHemisphere} />
       </div>
       <Results results={resultsList} hemisphere={hemisphere} />
     </div>
