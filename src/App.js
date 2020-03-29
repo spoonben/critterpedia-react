@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-import { fullList, monthMap } from "./lists";
+import { fullList } from "./lists";
+
+import Calendar from "./components/calendar";
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [resultsList, setResultsList] = useState(fullList);
-  const [hemisphere] = useState("northern");
 
   useEffect(() => {
     if (!searchText) {
@@ -19,9 +20,6 @@ const App = () => {
   }, [searchText]);
 
   const handleChange = (event) => setSearchText(event.target.value);
-
-  const getCalendarMonths = (availablitly) =>
-    availablitly[hemisphere].map((month) => monthMap[month]);
 
   const ResultsDiv = ({ results }) => (
     <div>
@@ -38,13 +36,7 @@ const App = () => {
                   <span className="card-title">Seasonability</span>
                 )}
                 {result.available && (
-                  <div className="calendar">
-                    {getCalendarMonths(result.available).map((month) => (
-                      <span className="month" key={month}>
-                        {month}
-                      </span>
-                    ))}
-                  </div>
+                  <Calendar availablitly={result.available["northern"]} />
                 )}
               </div>
               <div className="availablitly-spacer" />
