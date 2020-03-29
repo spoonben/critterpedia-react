@@ -1,10 +1,9 @@
 module.exports = (api) => {
   api.cache.using(() => process.env.NODE_ENV);
+  const isProd = process.env.NODE_ENV === "production";
 
-  const config = {
+  return {
     presets: ["@babel/preset-env", "@babel/preset-react"],
-    plugins: [!api.env("production") && "react-refresh/babel"].filter(Boolean),
+    plugins: [!isProd && "react-refresh/babel"].filter(Boolean),
   };
-  console.log("BABEL CONFIG", api.env("production"), config);
-  return config;
 };

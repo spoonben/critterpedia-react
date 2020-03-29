@@ -6,7 +6,9 @@ const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const isDev = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  entry: ["webpack-hot-middleware/client", "./src/index.js"],
+  entry: [isDev && "webpack-hot-middleware/client", "./src/index.js"].filter(
+    Boolean
+  ),
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
