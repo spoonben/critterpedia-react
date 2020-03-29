@@ -3,27 +3,33 @@ import React, { useState, useEffect } from "react";
 import { fullList } from "./lists";
 
 import Calendar from "./components/calendar";
+import HemisphereSelect from "./components/hemisphere-select";
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [resultsList, setResultsList] = useState(fullList);
+  const [hemisphere, setHemisphere] = useState("northern");
 
   useEffect(() => {
     if (!searchText) {
       setResultsList(fullList);
       return;
     }
-    const newResults = resultsList.filter((item) =>
+    const newResults = resultsList.filter(item =>
       item.name.toLowerCase().includes(searchText.toLowerCase())
     );
     setResultsList(newResults);
   }, [searchText]);
 
-  const handleChange = (event) => setSearchText(event.target.value);
+  const handleChange = event => setSearchText(event.target.value);
+
+  const changeHemisphere = ({ value }) => {
+    setHemisphere(value);
+  };
 
   const ResultsDiv = ({ results }) => (
     <div>
-      {results.map((result) => {
+      {results.map(result => {
         return (
           <div className="critterCard" key={result.name + result.critterNumber}>
             <div className="number">#{result.critterNumber}</div>
@@ -36,7 +42,7 @@ const App = () => {
                   <span className="card-title">Seasonability</span>
                 )}
                 {result.available && (
-                  <Calendar availablitly={result.available["northern"]} />
+                  <Calendar availablitly={result.available[hemisphere]} />
                 )}
               </div>
               <div className="availablitly-spacer" />
@@ -65,6 +71,10 @@ const App = () => {
         value={searchText}
         onChange={handleChange}
       ></input>
+      <HemisphereSelect
+        selectedOption={hemisphere}
+        handleChange={changeHemisphere}
+      />
       <ResultsDiv results={resultsList} />
     </div>
   );
