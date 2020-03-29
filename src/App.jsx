@@ -12,20 +12,20 @@ const App = () => {
       setResultsList(fullList);
       return;
     }
-    const newResults = resultsList.filter(item =>
+    const newResults = resultsList.filter((item) =>
       item.name.toLowerCase().includes(searchText.toLowerCase())
     );
     setResultsList(newResults);
   }, [searchText]);
 
-  const handleChange = event => setSearchText(event.target.value);
+  const handleChange = (event) => setSearchText(event.target.value);
 
-  const getCalendarMonths = availablitly =>
-    availablitly[hemisphere].map(month => monthMap[month]);
+  const getCalendarMonths = (availablitly) =>
+    availablitly[hemisphere].map((month) => monthMap[month]);
 
   const ResultsDiv = ({ results }) => (
     <div>
-      {results.map(result => {
+      {results.map((result) => {
         const availablitly = result.time.split(" - ");
         return (
           <div className="critterCard" key={result.name + result.critterNumber}>
