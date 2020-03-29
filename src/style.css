@@ -104,6 +104,10 @@ h1 {
 	margin: 5px 5px;
 }
 
+.current {
+	border: 2px solid rgba(233, 85, 47, 0.8);
+}
+
 .available {
 	background: url("month-bg.png");
 	color: #4b4c4e;

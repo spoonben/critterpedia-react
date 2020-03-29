@@ -17,17 +17,28 @@ const monthMap = {
   12: "Dec.",
 };
 
-const Month = ({ month, available }) => {
-  return <span className={`month ${available && "available"}`}>{month}</span>;
+const Month = ({ month, available, isCurrentMonth }) => {
+  return (
+    <span
+      className={`month ${available && "available"} ${
+        isCurrentMonth && "current"
+      }`}
+    >
+      {month}
+    </span>
+  );
 };
 
 const Calendar = ({ availablitly }) => {
+  // javascript thinks 0 is jan
+  const currentMonth = new Date().getMonth() + 1;
   return (
     <div className="calendar">
       {monthNumbers.map((num) => {
         return (
           <Month
             key={num}
+            isCurrentMonth={num === currentMonth}
             month={monthMap[num]}
             available={availablitly.includes(num)}
           />
