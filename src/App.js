@@ -1,28 +1,18 @@
 import React, { useState, useMemo } from "react";
 
-import { bugs, fish } from "./lists.json";
+import search from "./search";
 
 import HemisphereSelect from "./components/hemisphere-select";
 import Results from "./components/results";
 import Spacer from "./components/spacer";
 
-const allCritters = bugs.concat(fish);
-
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [hemisphere, setHemisphere] = useState("northern");
 
-  const resultsList = useMemo(
-    () =>
-      searchText
-        ? allCritters.filter((item) =>
-            item.name.toLowerCase().includes(searchText.toLowerCase())
-          )
-        : allCritters,
-    [searchText]
-  );
+  const resultsList = useMemo(() => search({ searchText }), [searchText]);
 
-  const handleChange = (event) => setSearchText(event.target.value);
+  const handleChange = event => setSearchText(event.target.value);
 
   const changeHemisphere = ({ value }) => {
     setHemisphere(value);
