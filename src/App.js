@@ -9,14 +9,31 @@ import Spacer from "./components/spacer";
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [hemisphere, setHemisphere] = useState("northern");
+  const [leavingNow, setLeavingNow] = useState(false);
 
-  const resultsList = useMemo(() => search({ searchText }), [searchText]);
+  const resultsList = useMemo(
+    () => search({ searchText, leavingNow, hemisphere }),
+    [searchText, leavingNow]
+  );
 
   const handleChange = event => setSearchText(event.target.value);
 
   const changeHemisphere = ({ value }) => {
     setHemisphere(value);
   };
+
+  const LeavingNow = () => (
+    <label>
+      Leaving this month
+      <input
+        type="checkbox"
+        onChange={() => {
+          setLeavingNow(!leavingNow);
+        }}
+        checked={leavingNow}
+      />
+    </label>
+  );
 
   return (
     <div className="main">
@@ -32,6 +49,9 @@ const App = () => {
         </div>
         <Spacer width="40px" />
         <HemisphereSelect handleChange={changeHemisphere} />
+      </div>
+      <div className="filters">
+        <LeavingNow />
       </div>
       <Results results={resultsList} hemisphere={hemisphere} />
     </div>
