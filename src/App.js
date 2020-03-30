@@ -16,7 +16,7 @@ const App = () => {
     [searchText, leavingNow]
   );
 
-  const handleChange = event => setSearchText(event.target.value);
+  const handleChange = (event) => setSearchText(event.target.value);
 
   const changeHemisphere = ({ value }) => {
     setHemisphere(value);
