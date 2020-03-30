@@ -18,7 +18,6 @@ const Name = ({ critterName }) => {
 const CritterCard = ({ critter, hemisphere }) => {
   return (
     <div className="critterCard" key={critter.name + critter.critterNumber}>
-      <div className="number">#{critter.critterNumber}</div>
       <div>
         <Name critterName={critter.name} />
         <Spacer height="20px" />
