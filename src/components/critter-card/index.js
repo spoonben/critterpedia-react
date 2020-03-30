@@ -24,7 +24,7 @@ const CritterCard = ({ critter, hemisphere }) => {
         <Spacer height="20px" />
         <div className="value">
           <img src={bellsImage} className="bells" /> <Spacer width="5px" />{" "}
-          <span className="amount">{critter.value}</span>
+          <span className="amount">{critter.value || "unknown"}</span>
         </div>
       </div>
       <Spacer height="10px" />
