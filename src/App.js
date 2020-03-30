@@ -2,6 +2,7 @@ import React, { useState, useMemo } from "react";
 
 import search from "./search";
 
+import Github from "./components/github";
 import HemisphereSelect from "./components/hemisphere-select";
 import Results from "./components/results";
 import Spacer from "./components/spacer";
@@ -54,6 +55,7 @@ const App = () => {
         <LeavingNow />
       </div>
       <Results results={resultsList} hemisphere={hemisphere} />
+      <Github />
     </div>
   );
 };

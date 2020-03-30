@@ -149,6 +149,10 @@ h1 {
 	padding: 20px;
 }
 
+.github {
+	text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
 	.main {
 		padding: 0;
