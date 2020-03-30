@@ -1,25 +1,19 @@
 import React, { useState, useMemo } from "react";
 
-import { bugs, fish } from "./lists.json";
+import search from "./search";
 
 import HemisphereSelect from "./components/hemisphere-select";
 import Results from "./components/results";
 import Spacer from "./components/spacer";
 
-const allCritters = bugs.concat(fish);
-
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [hemisphere, setHemisphere] = useState("northern");
+  const [leavingNow, setLeavingNow] = useState(false);
 
   const resultsList = useMemo(
-    () =>
-      searchText
-        ? allCritters.filter((item) =>
-            item.name.toLowerCase().includes(searchText.toLowerCase())
-          )
-        : allCritters,
-    [searchText]
+    () => search({ searchText, leavingNow, hemisphere }),
+    [searchText, leavingNow]
   );
 
   const handleChange = (event) => setSearchText(event.target.value);
@@ -27,6 +21,19 @@ const App = () => {
   const changeHemisphere = ({ value }) => {
     setHemisphere(value);
   };
+
+  const LeavingNow = () => (
+    <label>
+      Leaving this month
+      <input
+        type="checkbox"
+        onChange={() => {
+          setLeavingNow(!leavingNow);
+        }}
+        checked={leavingNow}
+      />
+    </label>
+  );
 
   return (
     <div className="main">
@@ -42,6 +49,9 @@ const App = () => {
         </div>
         <Spacer width="40px" />
         <HemisphereSelect handleChange={changeHemisphere} />
+      </div>
+      <div className="filters">
+        <LeavingNow />
       </div>
       <Results results={resultsList} hemisphere={hemisphere} />
     </div>
