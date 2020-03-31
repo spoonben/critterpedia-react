@@ -21,7 +21,7 @@ const App = () => {
     [searchText, leavingNow, critterType]
   );
 
-  const handleChange = event => setSearchText(event.target.value);
+  const handleChange = (event) => setSearchText(event.target.value);
 
   const changeHemisphere = ({ value }) => {
     setHemisphere(value);
