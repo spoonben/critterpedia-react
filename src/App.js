@@ -48,7 +48,7 @@ const App = () => {
       </div>
       <div className="filters">
         <div className="filter-sort-label">Filter by:</div>
-        <Spacer width="10px" />
+        <Spacer width="10px" hideMobile />
         <Select
           handleChange={({ value }) => setCritterType(value)}
           type="critter"
@@ -63,7 +63,7 @@ const App = () => {
       </div>
       <div className="sort-by">
         <div className="filter-sort-label">Sort by:</div>
-        <Spacer width="10px" />
+        <Spacer width="10px" hideMobile />
         <Select
           handleChange={({ value }) => setSort(value)}
           type="filter"
