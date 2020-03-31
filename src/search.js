@@ -1,3 +1,5 @@
+import * as R from "ramda";
+
 import { bugs, fish } from "./lists.json";
 
 const critterTypes = {
@@ -5,6 +7,8 @@ const critterTypes = {
 	bugs,
 	both: fish.concat(bugs)
 };
+
+const sortByName = R.sortBy(R.compose(R.toLower, R.prop("name")));
 
 const getLeavingNow = ({ baseResults, hemisphere }) => {
 	const currentMonth = new Date().getMonth() + 1; // because javascript thinks jan is 0
@@ -28,10 +32,10 @@ const search = ({
 				item.name.toLowerCase().includes(searchText.toLowerCase())
 		  )
 		: critterToSearch;
-	console.log(baseResults);
-	return leavingNow
-		? getLeavingNow({ baseResults, hemisphere })
-		: baseResults;
+	const resultsToReturn = leavingNow
+		? getLeavingNow({ baseResults, hemisphere }).sort()
+		: baseResults.sort();
+	return sortByName(resultsToReturn);
 };
 
 export default search;
