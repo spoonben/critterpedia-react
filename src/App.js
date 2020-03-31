@@ -3,21 +3,25 @@ import React, { useState, useMemo } from "react";
 import search from "./search";
 
 import Github from "./components/github";
+
 import HemisphereSelect from "./components/hemisphere-select";
+import CritterSelect from "./components/critter-select";
 import Results from "./components/results";
+
 import Spacer from "./components/spacer";
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [hemisphere, setHemisphere] = useState("northern");
   const [leavingNow, setLeavingNow] = useState(false);
+  const [critterType, setCritterType] = useState("both");
 
   const resultsList = useMemo(
-    () => search({ searchText, leavingNow, hemisphere }),
-    [searchText, leavingNow]
+    () => search({ searchText, leavingNow, hemisphere, critterType }),
+    [searchText, leavingNow, critterType]
   );
 
-  const handleChange = (event) => setSearchText(event.target.value);
+  const handleChange = event => setSearchText(event.target.value);
 
   const changeHemisphere = ({ value }) => {
     setHemisphere(value);
@@ -36,6 +40,8 @@ const App = () => {
     </label>
   );
 
+  const CritterType = () => {};
+
   return (
     <div className="main">
       <h1>Animal Crossing Critter Search</h1>
@@ -53,6 +59,7 @@ const App = () => {
       </div>
       <div className="filters">
         <LeavingNow />
+        <CritterSelect handleChange={({ value }) => setCritterType(value)} />
       </div>
       <Results results={resultsList} hemisphere={hemisphere} />
       <Github />
