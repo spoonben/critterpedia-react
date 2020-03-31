@@ -1,6 +1,14 @@
+import * as R from "ramda";
+
 import { bugs, fish } from "./lists.json";
 
-const allCritters = bugs.concat(fish);
+const critterTypes = {
+  fish,
+  bugs,
+  both: fish.concat(bugs),
+};
+
+const sortBy = (filter) => R.sortBy(R.prop(filter));
 
 const getLeavingNow = ({ baseResults, hemisphere }) => {
   const currentMonth = new Date().getMonth() + 1; // because javascript thinks jan is 0
@@ -11,14 +19,25 @@ const getLeavingNow = ({ baseResults, hemisphere }) => {
   );
 };
 
-const search = ({ searchText, leavingNow, hemisphere }) => {
-  console.log(leavingNow);
+const search = ({
+  searchText,
+  leavingNow,
+  hemisphere,
+  sort = "name",
+  critterType = "both",
+}) => {
+  const critterToSearch =
+    critterType === "both" ? critterTypes.both : critterTypes[critterType];
   const baseResults = searchText
-    ? allCritters.filter((item) =>
+    ? critterToSearch.filter((item) =>
         item.name.toLowerCase().includes(searchText.toLowerCase())
       )
-    : allCritters;
-  return leavingNow ? getLeavingNow({ baseResults, hemisphere }) : baseResults;
+    : critterToSearch;
+  const resultsToReturn = leavingNow
+    ? getLeavingNow({ baseResults, hemisphere })
+    : baseResults;
+  console.log(sort);
+  return sortBy(sort)(resultsToReturn);
 };
 
 export default search;

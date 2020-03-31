@@ -3,18 +3,22 @@ import React, { useState, useMemo } from "react";
 import search from "./search";
 
 import Github from "./components/github";
-import HemisphereSelect from "./components/hemisphere-select";
+
+import Select from "./components/select";
 import Results from "./components/results";
+
 import Spacer from "./components/spacer";
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [hemisphere, setHemisphere] = useState("northern");
   const [leavingNow, setLeavingNow] = useState(false);
+  const [critterType, setCritterType] = useState("both");
+  const [sort, setSort] = useState("name");
 
   const resultsList = useMemo(
-    () => search({ searchText, leavingNow, hemisphere }),
-    [searchText, leavingNow]
+    () => search({ searchText, leavingNow, hemisphere, critterType, sort }),
+    [searchText, leavingNow, critterType, sort]
   );
 
   const handleChange = (event) => setSearchText(event.target.value);
@@ -22,19 +26,6 @@ const App = () => {
   const changeHemisphere = ({ value }) => {
     setHemisphere(value);
   };
-
-  const LeavingNow = () => (
-    <label>
-      Leaving this month
-      <input
-        type="checkbox"
-        onChange={() => {
-          setLeavingNow(!leavingNow);
-        }}
-        checked={leavingNow}
-      />
-    </label>
-  );
 
   return (
     <div className="main">
@@ -49,10 +40,35 @@ const App = () => {
           ></input>
         </div>
         <Spacer width="40px" />
-        <HemisphereSelect handleChange={changeHemisphere} />
+        <Select
+          handleChange={changeHemisphere}
+          type="hemisphere"
+          className="hemisphereSelect"
+        />
       </div>
       <div className="filters">
-        <LeavingNow />
+        <div className="filter-sort-label">Filter by:</div>
+        <Spacer width="10px" />
+        <Select
+          handleChange={({ value }) => setCritterType(value)}
+          type="critter"
+          className="critter-select"
+        />
+        <Spacer width="10px" />
+        <Select
+          handleChange={({ value }) => setLeavingNow(value)}
+          type="leaving"
+          className="leaving-now"
+        />
+      </div>
+      <div className="sort-by">
+        <div className="filter-sort-label">Sort by:</div>
+        <Spacer width="10px" />
+        <Select
+          handleChange={({ value }) => setSort(value)}
+          type="filter"
+          className="filter-select"
+        />
       </div>
       <Results results={resultsList} hemisphere={hemisphere} />
       <Github />
