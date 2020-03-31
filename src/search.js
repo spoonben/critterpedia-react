@@ -8,7 +8,7 @@ const critterTypes = {
   both: fish.concat(bugs),
 };
 
-const sortBy = (filter) => R.sortBy(R.compose(R.toLower, R.prop(filter)));
+const sortBy = (filter) => R.sortBy(R.prop(filter));
 
 const getLeavingNow = ({ baseResults, hemisphere }) => {
   const currentMonth = new Date().getMonth() + 1; // because javascript thinks jan is 0
@@ -36,6 +36,7 @@ const search = ({
   const resultsToReturn = leavingNow
     ? getLeavingNow({ baseResults, hemisphere })
     : baseResults;
+  console.log(sort);
   return sortBy(sort)(resultsToReturn);
 };
 

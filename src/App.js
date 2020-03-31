@@ -27,19 +27,6 @@ const App = () => {
     setHemisphere(value);
   };
 
-  const LeavingNow = () => (
-    <label>
-      Leaving this month
-      <input
-        type="checkbox"
-        onChange={() => {
-          setLeavingNow(!leavingNow);
-        }}
-        checked={leavingNow}
-      />
-    </label>
-  );
-
   return (
     <div className="main">
       <h1>Animal Crossing Critter Search</h1>
@@ -60,13 +47,22 @@ const App = () => {
         />
       </div>
       <div className="filters">
-        <LeavingNow />
+        <div className="filter-sort-label">Filter by:</div>
         <Spacer width="10px" />
         <Select
           handleChange={({ value }) => setCritterType(value)}
           type="critter"
           className="critter-select"
         />
+        <Spacer width="10px" />
+        <Select
+          handleChange={({ value }) => setLeavingNow(value)}
+          type="leaving"
+          className="leaving-now"
+        />
+      </div>
+      <div className="sort-by">
+        <div className="filter-sort-label">Sort by:</div>
         <Spacer width="10px" />
         <Select
           handleChange={({ value }) => setSort(value)}

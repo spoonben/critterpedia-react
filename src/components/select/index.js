@@ -14,8 +14,12 @@ const options = {
   ],
   filter: [
     { value: "name", label: "Name" },
-    { value: "value", label: "Value" },
+    // { value: "value", label: "Value" }, can't do value until we fix the commas in the data
     { value: "location", label: "Location" },
+  ],
+  leaving: [
+    { value: false, label: "Leaving whenever" },
+    { value: true, label: "Leaving this month" },
   ],
 };
 
@@ -25,8 +29,9 @@ const HemisphereSelect = ({ handleChange, type, className }) => {
       <Select
         options={options[type]}
         onChange={handleChange}
-        className={`${className} select`}
+        className={`${className || ""} select`}
         defaultValue={options[type][0]}
+        isSearchable={false}
       />
     </>
   );

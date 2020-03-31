@@ -151,6 +151,17 @@ h1 {
   padding: 20px;
 }
 
+.sort-by {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.filter-sort-label {
+  font-weight: 700;
+  width: 100px;
+}
+
 .github {
   text-align: center;
 }
@@ -161,6 +172,10 @@ h1 {
 
 .critter-select {
   width: 230px;
+}
+
+.leaving-now {
+  width: 220px;
 }
 
 @media only screen and (max-width: 600px) {
