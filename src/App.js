@@ -4,8 +4,7 @@ import search from "./search";
 
 import Github from "./components/github";
 
-import HemisphereSelect from "./components/hemisphere-select";
-import CritterSelect from "./components/critter-select";
+import Select from "./components/select";
 import Results from "./components/results";
 
 import Spacer from "./components/spacer";
@@ -15,13 +14,14 @@ const App = () => {
   const [hemisphere, setHemisphere] = useState("northern");
   const [leavingNow, setLeavingNow] = useState(false);
   const [critterType, setCritterType] = useState("both");
+  const [sort, setSort] = useState("name");
 
   const resultsList = useMemo(
-    () => search({ searchText, leavingNow, hemisphere, critterType }),
-    [searchText, leavingNow, critterType]
+    () => search({ searchText, leavingNow, hemisphere, critterType, sort }),
+    [searchText, leavingNow, critterType, sort]
   );
 
-  const handleChange = (event) => setSearchText(event.target.value);
+  const handleChange = event => setSearchText(event.target.value);
 
   const changeHemisphere = ({ value }) => {
     setHemisphere(value);
@@ -55,12 +55,26 @@ const App = () => {
           ></input>
         </div>
         <Spacer width="40px" />
-        <HemisphereSelect handleChange={changeHemisphere} />
+        <Select
+          handleChange={changeHemisphere}
+          type="hemisphere"
+          className="hemisphereSelect"
+        />
       </div>
       <div className="filters">
         <LeavingNow />
         <Spacer width="10px" />
-        <CritterSelect handleChange={({ value }) => setCritterType(value)} />
+        <Select
+          handleChange={({ value }) => setCritterType(value)}
+          type="critter"
+          className="critter-select"
+        />
+        <Spacer width="10px" />
+        <Select
+          handleChange={({ value }) => setSort(value)}
+          type="filter"
+          className="filter-select"
+        />
       </div>
       <Results results={resultsList} hemisphere={hemisphere} />
       <Github />
