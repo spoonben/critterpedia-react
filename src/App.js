@@ -59,6 +59,7 @@ const App = () => {
       </div>
       <div className="filters">
         <LeavingNow />
+        <Spacer width="10px" />
         <CritterSelect handleChange={({ value }) => setCritterType(value)} />
       </div>
       <Results results={resultsList} hemisphere={hemisphere} />

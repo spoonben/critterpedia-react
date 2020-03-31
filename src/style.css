@@ -146,11 +146,17 @@ h1 {
 }
 
 .filters {
+	display: flex;
+	align-items: center;
 	padding: 20px;
 }
 
 .github {
 	text-align: center;
+}
+
+.critter-select {
+	width: 230px;
 }
 
 @media only screen and (max-width: 600px) {
