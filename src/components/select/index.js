@@ -14,7 +14,7 @@ const options = {
   ],
   filter: [
     { value: "name", label: "Name" },
-    // { value: "value", label: "Value" }, can't do value until we fix the commas in the data
+    { value: "value", label: "Value" },
     { value: "location", label: "Location" },
   ],
   leaving: [

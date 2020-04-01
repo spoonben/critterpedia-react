@@ -37,7 +37,8 @@ const search = ({
     ? getLeavingNow({ baseResults, hemisphere })
     : baseResults;
   console.log(sort);
-  return sortBy(sort)(resultsToReturn);
+  const sortedResults = sortBy(sort)(resultsToReturn);
+  return sort === "value" ? R.reverse(sortedResults) : sortedResults;
 };
 
 export default search;
