@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from "react";
-import * as R from "ramda";
 
 import search from "./search";
 

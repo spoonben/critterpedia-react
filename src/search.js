@@ -1,7 +1,5 @@
 import * as R from "ramda";
 
-import { monthMap } from "./components/constants";
-
 import { bugs, fish } from "./lists.json";
 
 const critterTypes = {
