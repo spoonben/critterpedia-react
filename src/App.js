@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import * as R from "ramda";
 
 import search from "./search";
 
@@ -71,7 +72,12 @@ const App = () => {
           className="leaving-now"
         />
         <Spacer width="10px" />
-        <MonthsSelect handleChange={({ value }) => setMonthToFilter(value)} />
+        <MonthsSelect
+          handleChange={selection => {
+            setMonthToFilter(selection ? selection.map(t => t.value) : []);
+          }}
+          disabled={leavingNow}
+        />
       </div>
       <div className="sort-by">
         <div className="filter-sort-label">Sort by:</div>
