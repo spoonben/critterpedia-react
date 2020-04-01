@@ -27,12 +27,12 @@ const App = () => {
         hemisphere,
         critterType,
         sort,
-        monthsToFilter
+        monthsToFilter,
       }),
     [searchText, leavingNow, critterType, sort, monthsToFilter]
   );
 
-  const handleChange = event => setSearchText(event.target.value);
+  const handleChange = (event) => setSearchText(event.target.value);
 
   const changeHemisphere = ({ value }) => {
     setHemisphere(value);
@@ -73,8 +73,8 @@ const App = () => {
         />
         <Spacer width="10px" />
         <MonthsSelect
-          handleChange={selection => {
-            setMonthToFilter(selection ? selection.map(t => t.value) : []);
+          handleChange={(selection) => {
+            setMonthToFilter(selection ? selection.map((t) => t.value) : []);
           }}
           disabled={leavingNow}
         />
