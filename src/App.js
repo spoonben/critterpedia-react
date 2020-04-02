@@ -18,7 +18,7 @@ const App = () => {
 
   const resultsList = useMemo(
     () => search({ searchText, leavingNow, hemisphere, critterType, sort }),
-    [searchText, leavingNow, critterType, sort]
+    [searchText, leavingNow, hemisphere, critterType, sort]
   );
 
   const handleChange = (event) => setSearchText(event.target.value);
