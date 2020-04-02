@@ -23,7 +23,9 @@ const CritterCard = ({ critter, hemisphere }) => {
         <Spacer height="20px" />
         <div className="value">
           <img src={bellsImage} className="bells" /> <Spacer width="5px" />{" "}
-          <span className="amount">{critter.value || "unknown"}</span>
+          <span className="amount">
+            {critter.value ? critter.value.toLocaleString() : "unknown"}
+          </span>
         </div>
       </div>
       <Spacer height="10px" />
