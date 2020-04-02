@@ -28,7 +28,7 @@ const App = () => {
         sort,
         monthsToFilter,
       }),
-    [searchText, leavingNow, critterType, sort, monthsToFilter]
+    [searchText, leavingNow, hemisphere, critterType, sort, monthsToFilter]
   );
 
   const handleChange = (event) => setSearchText(event.target.value);
