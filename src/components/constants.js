@@ -14,5 +14,5 @@ export const monthMap = {
 };
 
 export const mq = {
-  small: "(max-width: 600px)",
+  small: "max-width: 600px",
 };

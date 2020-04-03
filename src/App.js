@@ -81,17 +81,20 @@ const SingleSelect = (props) => (
   <Select {...props} defaultValue={props.options[0]} isSearchable={false} />
 );
 
-const monthOptions = Object.entries(monthMap).map(([value, label]) => ({
-  value: Number(value),
-  label,
-}));
+const monthOptions = [
+  { value: "", label: "Any month" },
+  ...Object.entries(monthMap).map(([value, label]) => ({
+    value: Number(value),
+    label,
+  })),
+];
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [hemisphere, setHemisphere] = useState("northern");
   const [leavingNow, setLeavingNow] = useState(false);
   const [critterType, setCritterType] = useState("both");
-  const [monthsToFilter, setMonthToFilter] = useState([]);
+  const [monthToFilter, setMonthToFilter] = useState(undefined);
   const [sort, setSort] = useState("name");
 
   const resultsList = useMemo(
@@ -102,9 +105,9 @@ const App = () => {
         hemisphere,
         critterType,
         sort,
-        monthsToFilter,
+        monthToFilter,
       }),
-    [searchText, leavingNow, hemisphere, critterType, sort, monthsToFilter]
+    [searchText, leavingNow, hemisphere, critterType, sort, monthToFilter]
   );
 
   const handleChange = (event) => setSearchText(event.target.value);
@@ -146,7 +149,7 @@ const App = () => {
             { value: "bugs", label: "Just bugs" },
             { value: "fish", label: "Just fish" },
           ]}
-          handleChange={({ value }) => setCritterType(value)}
+          onChange={({ value }) => setCritterType(value)}
         />
         <Spacer width="10px" />
         <SingleSelect
@@ -155,17 +158,15 @@ const App = () => {
             { value: false, label: "Leaving whenever" },
             { value: true, label: "Leaving this month" },
           ]}
-          handleChange={({ value }) => setLeavingNow(value)}
+          onChange={({ value }) => setLeavingNow(value)}
         />
         <Spacer width="10px" />
-        <Select
-          css="min-width: 120px"
+        <SingleSelect
+          css="width: 160px"
           options={monthOptions}
-          onChange={(selection) => {
-            setMonthToFilter(selection ? selection.map((t) => t.value) : []);
+          onChange={({ value }) => {
+            setMonthToFilter(value);
           }}
-          placeholder="Months"
-          isMulti
           isDisabled={leavingNow}
         />
       </Filters>
@@ -179,7 +180,7 @@ const App = () => {
             { value: "value", label: "Value" },
             { value: "location", label: "Location" },
           ]}
-          handleChange={({ value }) => setSort(value)}
+          onChange={({ value }) => setSort(value)}
         />
       </SortBy>
       <Results results={resultsList} hemisphere={hemisphere} />
