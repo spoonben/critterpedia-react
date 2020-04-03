@@ -18,11 +18,13 @@ const filterEverything = ({
   leavingNow,
 }) => {
   let crittersFiltered = critterToSearch;
+  // Filter by the searched text
   if (searchText) {
     crittersFiltered = crittersFiltered.filter((item) =>
       item.name.toLowerCase().includes(searchText.toLowerCase())
     );
   }
+  // Filter by "Leaving this month"
   if (leavingNow) {
     const currentMonth = new Date().getMonth() + 1; // because javascript thinks jan is 0
     crittersFiltered = crittersFiltered.filter(
@@ -31,6 +33,7 @@ const filterEverything = ({
         !item.available[hemisphere].includes(currentMonth + 1)
     );
   }
+  // Filter by month
   if (!leavingNow && monthsToFilter && monthsToFilter.length > 0) {
     crittersFiltered = crittersFiltered.filter((item) => {
       const isAvailable = (month) => item.available[hemisphere].includes(month);

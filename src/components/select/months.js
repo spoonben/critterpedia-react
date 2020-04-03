@@ -7,13 +7,10 @@ import { monthMap } from "../constants";
 const getValue = (month) =>
   Number(R.head(R.values(R.pick([month], R.invertObj(monthMap)))));
 
-const options = R.map(
-  (month) => ({
-    value: getValue(month),
-    label: month,
-  }),
-  R.values(monthMap)
-);
+const options = Object.entries(monthMap).map(([value, label]) => ({
+  value: Number(value),
+  label,
+}));
 
 const MonthSelect = ({ handleChange, disabled }) => {
   return (
