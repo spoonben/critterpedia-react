@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const Github = () => (
-  <div className="github">
+  <div css="text-align: center">
     Find an issue?{" "}
     <a href="https://github.com/spoonben/critterpedia-react/issues">
       Let us know
