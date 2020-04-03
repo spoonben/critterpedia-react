@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import styled from "styled-components";
 
 import search from "./search";
 
@@ -8,6 +9,72 @@ import Select from "./components/select";
 import Results from "./components/results";
 
 import Spacer from "./components/spacer";
+const mqSmall = "max-width: 600px";
+
+const Main = styled.main`
+  padding: 20px;
+  @media (${mqSmall}) {
+    padding: 0;
+  }
+`;
+const SearchWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+
+  @media (${mqSmall}) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+`;
+
+const SearchBar = styled.div`
+  flex-grow: 1;
+
+  input[type="text"] {
+    padding: 4px 5px;
+    font-size: 24px;
+    border: 2px solid #4b4c4e;
+    width: 100%;
+    background: #ebe2c7;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  @media (${mqSmall}) {
+    min-width: 100%;
+  }
+`;
+const HemisphereSelect = styled(Select)`
+  font-size: 18px;
+  min-width: 150px;
+
+  @media (${mqSmall}) {
+    font-size: 18px;
+    min-width: 104%;
+    margin-top: 10px;
+  }
+`;
+const Filters = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+`;
+const SortBy = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+`;
+const LabelText = styled.label`
+  font-weight: 700;
+  width: 100px;
+  @media (${mqSmall}) {
+    width: 100%;
+  }
+`;
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
@@ -28,51 +95,48 @@ const App = () => {
   };
 
   return (
-    <div className="main">
+    <Main>
       <h1>Animal Crossing Critter Search</h1>
-      <div className="search-wrapper">
-        <div className="search-bar">
+      <SearchWrapper>
+        <SearchBar>
           <input
             type="text"
             placeholder="Search By Name"
             value={searchText}
             onChange={handleChange}
-          ></input>
-        </div>
+          />
+        </SearchBar>
         <Spacer width="40px" />
-        <Select
-          handleChange={changeHemisphere}
-          type="hemisphere"
-          className="hemisphereSelect"
-        />
-      </div>
-      <div className="filters">
-        <div className="filter-sort-label">Filter by:</div>
+        <HemisphereSelect handleChange={changeHemisphere} type="hemisphere" />
+      </SearchWrapper>
+      <Filters>
+        <LabelText for="critterType">Filter by:</LabelText>
         <Spacer width="10px" hideMobile />
         <Select
+          id="critterType"
           handleChange={({ value }) => setCritterType(value)}
           type="critter"
-          className="critter-select"
+          css="width: 230px"
         />
         <Spacer width="10px" />
         <Select
           handleChange={({ value }) => setLeavingNow(value)}
           type="leaving"
-          className="leaving-now"
+          css="width: 220px"
         />
-      </div>
-      <div className="sort-by">
-        <div className="filter-sort-label">Sort by:</div>
+      </Filters>
+      <SortBy>
+        <LabelText for="sortBy">Sort by:</LabelText>
         <Spacer width="10px" hideMobile />
         <Select
+          id="sortBy"
           handleChange={({ value }) => setSort(value)}
           type="filter"
-          className="filter-select"
         />
-      </div>
+      </SortBy>
       <Results results={resultsList} hemisphere={hemisphere} />
       <Github />
-    </div>
+    </Main>
   );
 };
 
