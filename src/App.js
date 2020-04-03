@@ -6,6 +6,7 @@ import search from "./search";
 import Github from "./components/github";
 
 import Select from "./components/select";
+import MonthsSelect from "./components/select/months";
 import Results from "./components/results";
 
 import Spacer from "./components/spacer";
@@ -17,6 +18,7 @@ const Main = styled.main`
     padding: 0;
   }
 `;
+
 const SearchWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -46,6 +48,7 @@ const SearchBar = styled.div`
     min-width: 100%;
   }
 `;
+
 const HemisphereSelect = styled(Select)`
   font-size: 18px;
   min-width: 150px;
@@ -56,18 +59,21 @@ const HemisphereSelect = styled(Select)`
     margin-top: 10px;
   }
 `;
+
 const Filters = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 20px;
 `;
+
 const SortBy = styled.div`
   display: flex;
   align-items: center;
   padding: 0 20px;
   flex-wrap: wrap;
 `;
+
 const LabelText = styled.label`
   font-weight: 700;
   width: 100px;
@@ -81,11 +87,20 @@ const App = () => {
   const [hemisphere, setHemisphere] = useState("northern");
   const [leavingNow, setLeavingNow] = useState(false);
   const [critterType, setCritterType] = useState("both");
+  const [monthsToFilter, setMonthToFilter] = useState([]);
   const [sort, setSort] = useState("name");
 
   const resultsList = useMemo(
-    () => search({ searchText, leavingNow, hemisphere, critterType, sort }),
-    [searchText, leavingNow, hemisphere, critterType, sort]
+    () =>
+      search({
+        searchText,
+        leavingNow,
+        hemisphere,
+        critterType,
+        sort,
+        monthsToFilter,
+      }),
+    [searchText, leavingNow, hemisphere, critterType, sort, monthsToFilter]
   );
 
   const handleChange = (event) => setSearchText(event.target.value);
@@ -124,9 +139,16 @@ const App = () => {
           type="leaving"
           css="width: 220px"
         />
+        <Spacer width="10px" />
+        <MonthsSelect
+          handleChange={(selection) => {
+            setMonthToFilter(selection ? selection.map((t) => t.value) : []);
+          }}
+          disabled={leavingNow}
+        />
       </Filters>
       <SortBy>
-        <LabelText for="sortBy">Sort by:</LabelText>
+        <LabelText>Sort by:</LabelText>
         <Spacer width="10px" hideMobile />
         <Select
           id="sortBy"
