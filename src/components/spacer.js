@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import { mq } from "./constants";
 
-const Spacer = styled.div.attrs({
-  isInline: (p) => p.isInline,
-  hideMobile: (p) => p.hideMobile,
-})`
+const Spacer = styled.div`
   flex: 0 0 auto;
   width: ${(p) => p.width};
   height: ${(p) => p.height};

@@ -19,70 +19,10 @@ h1 {
   padding-right: 20px;
 }
 
-.critterCard {
-  background-image: url("bg.png");
-  border-radius: 3px;
-  box-shadow: 1px 1px 5px 2px #5e584a;
-  margin: 20px;
-  padding: 20px;
-  position: relative;
-}
-
-.critterCardRow {
-}
 .number {
   position: absolute;
   top: 5px;
   right: 10px;
-}
-
-.name-block {
-  text-align: center;
-}
-
-.name {
-  padding: 5px 30px;
-  color: #5e584a;
-  font-size: 25px;
-  line-height: 1.2;
-  display: inline-block;
-  border: 1px solid #000;
-}
-.name-content {
-  margin-top: 10px;
-  transform: rotate(-4deg);
-  display: inline-block;
-  background-color: #fefff5;
-  border-radius: 5px;
-  padding: 2px;
-  box-shadow: 5px 3px 4px 1px;
-}
-
-.value {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.value .bells {
-  width: 35px;
-}
-
-.amount {
-  margin-top: 15px;
-}
-
-.location-wrap {
-  border-top: 1px solid #a59b66;
-  padding: 5px 0;
-}
-
-.card-title {
-  background: #d3d291;
-  color: #3f4b03;
-  padding: 0 3px;
-  flex: 0;
-  margin: 5px 10px 0 0;
 }
 
 .calendar {
@@ -105,30 +45,4 @@ h1 {
 .available {
   background: url("month-bg.png");
   color: #4b4c4e;
-}
-
-.search-bar {
-  flex-grow: 1;
-}
-
-.spacer {
-  flex: 0 0 auto;
-}
-
-.inline {
-  display: "inline-flex";
-}
-
-.select {
-  min-width: 200px;
-}
-
-.leaving-now {
-  width: 220px;
-}
-
-@media only screen and (max-width: 600px) {
-  .hide-mobile {
-    display: none;
-  }
 }
