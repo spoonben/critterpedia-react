@@ -67,7 +67,7 @@ const CritterCard = ({ critter, hemisphere }) => {
         </div>
       </div>
       <Spacer height="10px" />
-      {critter.shadowSize && <div>Shadow Size{critter.shadowSize}</div>}
+      {critter.shadowSize && <div>Shadow Size: {critter.shadowSize}</div>}
       <div>
         <div>
           {critter.available && (
