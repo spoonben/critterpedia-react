@@ -5,6 +5,7 @@ import search from "./search";
 import Github from "./components/github";
 
 import Select from "./components/select";
+import MonthsSelect from "./components/select/months";
 import Results from "./components/results";
 
 import Spacer from "./components/spacer";
@@ -14,11 +15,20 @@ const App = () => {
   const [hemisphere, setHemisphere] = useState("northern");
   const [leavingNow, setLeavingNow] = useState(false);
   const [critterType, setCritterType] = useState("both");
+  const [monthsToFilter, setMonthToFilter] = useState([]);
   const [sort, setSort] = useState("name");
 
   const resultsList = useMemo(
-    () => search({ searchText, leavingNow, hemisphere, critterType, sort }),
-    [searchText, leavingNow, hemisphere, critterType, sort]
+    () =>
+      search({
+        searchText,
+        leavingNow,
+        hemisphere,
+        critterType,
+        sort,
+        monthsToFilter,
+      }),
+    [searchText, leavingNow, hemisphere, critterType, sort, monthsToFilter]
   );
 
   const handleChange = (event) => setSearchText(event.target.value);
@@ -59,6 +69,13 @@ const App = () => {
           handleChange={({ value }) => setLeavingNow(value)}
           type="leaving"
           className="leaving-now"
+        />
+        <Spacer width="10px" />
+        <MonthsSelect
+          handleChange={(selection) => {
+            setMonthToFilter(selection ? selection.map((t) => t.value) : []);
+          }}
+          disabled={leavingNow}
         />
       </div>
       <div className="sort-by">
