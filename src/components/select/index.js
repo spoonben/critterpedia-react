@@ -25,15 +25,13 @@ const options = {
 
 const HemisphereSelect = ({ handleChange, type, className }) => {
   return (
-    <>
-      <Select
-        options={options[type]}
-        onChange={handleChange}
-        className={`${className || ""} select`}
-        defaultValue={options[type][0]}
-        isSearchable={false}
-      />
-    </>
+    <Select
+      options={options[type]}
+      onChange={handleChange}
+      className={`${className || ""} select`}
+      defaultValue={options[type][0]}
+      isSearchable={false}
+    />
   );
 };
 

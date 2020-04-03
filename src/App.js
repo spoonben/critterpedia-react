@@ -1,20 +1,16 @@
 import React, { useState, useMemo } from "react";
 import styled from "styled-components";
+import ReactSelect from "react-select";
 
 import search from "./search";
-
 import Github from "./components/github";
-
-import Select from "./components/select";
-import MonthsSelect from "./components/select/months";
 import Results from "./components/results";
-
 import Spacer from "./components/spacer";
-const mqSmall = "max-width: 600px";
+import { monthMap, mq } from "./components/constants";
 
 const Main = styled.main`
   padding: 20px;
-  @media (${mqSmall}) {
+  @media (${mq.small}) {
     padding: 0;
   }
 `;
@@ -25,7 +21,7 @@ const SearchWrapper = styled.div`
   justify-content: center;
   padding: 0 20px;
 
-  @media (${mqSmall}) {
+  @media (${mq.small}) {
     align-items: flex-start;
     flex-direction: column;
   }
@@ -44,19 +40,8 @@ const SearchBar = styled.div`
     outline: none;
   }
 
-  @media (${mqSmall}) {
+  @media (${mq.small}) {
     min-width: 100%;
-  }
-`;
-
-const HemisphereSelect = styled(Select)`
-  font-size: 18px;
-  min-width: 150px;
-
-  @media (${mqSmall}) {
-    font-size: 18px;
-    min-width: 104%;
-    margin-top: 10px;
   }
 `;
 
@@ -77,10 +62,29 @@ const SortBy = styled.div`
 const LabelText = styled.label`
   font-weight: 700;
   width: 100px;
-  @media (${mqSmall}) {
+  @media (${mq.small}) {
     width: 100%;
   }
 `;
+
+const Select = styled(ReactSelect)`
+  font-size: 18px;
+  min-width: 150px;
+
+  @media (${mq.small}) {
+    font-size: 18px;
+    min-width: 104%;
+    margin-top: 10px;
+  }
+`;
+const SingleSelect = (props) => (
+  <Select {...props} defaultValue={props.options[0]} isSearchable={false} />
+);
+
+const monthOptions = Object.entries(monthMap).map(([value, label]) => ({
+  value: Number(value),
+  label,
+}));
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
@@ -122,38 +126,60 @@ const App = () => {
           />
         </SearchBar>
         <Spacer width="40px" />
-        <HemisphereSelect handleChange={changeHemisphere} type="hemisphere" />
+        <SingleSelect
+          options={[
+            { value: "northern", label: "Northern" },
+            { value: "southern", label: "Southern" },
+          ]}
+          handleChange={changeHemisphere}
+          type="hemisphere"
+        />
       </SearchWrapper>
       <Filters>
-        <LabelText for="critterType">Filter by:</LabelText>
+        <LabelText htmlFor="critterType">Filter by:</LabelText>
         <Spacer width="10px" hideMobile />
-        <Select
-          id="critterType"
-          handleChange={({ value }) => setCritterType(value)}
-          type="critter"
+        <SingleSelect
+          inputId="critterType"
           css="width: 230px"
+          options={[
+            { value: "both", label: "Both fish and bugs" },
+            { value: "bugs", label: "Just bugs" },
+            { value: "fish", label: "Just fish" },
+          ]}
+          handleChange={({ value }) => setCritterType(value)}
+        />
+        <Spacer width="10px" />
+        <SingleSelect
+          css="width: 220px"
+          options={[
+            { value: false, label: "Leaving whenever" },
+            { value: true, label: "Leaving this month" },
+          ]}
+          handleChange={({ value }) => setLeavingNow(value)}
         />
         <Spacer width="10px" />
         <Select
-          handleChange={({ value }) => setLeavingNow(value)}
-          type="leaving"
-          css="width: 220px"
-        />
-        <Spacer width="10px" />
-        <MonthsSelect
-          handleChange={(selection) => {
+          css="min-width: 120px"
+          options={monthOptions}
+          onChange={(selection) => {
             setMonthToFilter(selection ? selection.map((t) => t.value) : []);
           }}
-          disabled={leavingNow}
+          placeholder="Months"
+          isMulti
+          isDisabled={leavingNow}
         />
       </Filters>
       <SortBy>
-        <LabelText>Sort by:</LabelText>
+        <LabelText htmlFor="sortBy">Sort by:</LabelText>
         <Spacer width="10px" hideMobile />
-        <Select
-          id="sortBy"
+        <SingleSelect
+          inputId="sortBy"
+          options={[
+            { value: "name", label: "Name" },
+            { value: "value", label: "Value" },
+            { value: "location", label: "Location" },
+          ]}
           handleChange={({ value }) => setSort(value)}
-          type="filter"
         />
       </SortBy>
       <Results results={resultsList} hemisphere={hemisphere} />
