@@ -4,6 +4,8 @@ module.exports = (api) => {
 
   return {
     presets: ["@babel/preset-env", "@babel/preset-react"],
-    plugins: [!isProd && "react-refresh/babel"].filter(Boolean),
+    plugins: ["styled-components", !isProd && "react-refresh/babel"].filter(
+      Boolean
+    ),
   };
 };

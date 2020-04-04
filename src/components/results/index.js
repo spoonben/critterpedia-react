@@ -3,10 +3,10 @@ import * as React from "react";
 import CritterCard from "../critter-card";
 
 const Results = ({ results, hemisphere }) => (
-  <div className="results">
-    {results.map((result) => {
-      return <CritterCard critter={result} hemisphere={hemisphere} />;
-    })}
+  <div>
+    {results.map((result) => (
+      <CritterCard critter={result} hemisphere={hemisphere} />
+    ))}
   </div>
 );
 

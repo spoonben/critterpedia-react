@@ -11,7 +11,7 @@ const critterTypes = {
 const sortBy = (filter) => R.sortBy(R.prop(filter));
 
 const filterEverything = ({
-  monthsToFilter,
+  monthToFilter,
   hemisphere,
   critterToSearch,
   searchText,
@@ -34,11 +34,10 @@ const filterEverything = ({
     );
   }
   // Filter by month
-  if (!leavingNow && monthsToFilter && monthsToFilter.length > 0) {
-    crittersFiltered = crittersFiltered.filter((item) => {
-      const isAvailable = (month) => item.available[hemisphere].includes(month);
-      return R.all(isAvailable)(monthsToFilter);
-    });
+  if (!leavingNow && monthToFilter) {
+    crittersFiltered = crittersFiltered.filter((item) =>
+      item.available[hemisphere].includes(monthToFilter)
+    );
   }
   return crittersFiltered;
 };
@@ -47,14 +46,14 @@ const search = ({
   searchText,
   leavingNow,
   hemisphere,
-  monthsToFilter,
+  monthToFilter,
   sort = "name",
   critterType = "both",
 }) => {
   const critterToSearch =
     critterType === "both" ? critterTypes.both : critterTypes[critterType];
   const resultsToReturn = filterEverything({
-    monthsToFilter,
+    monthToFilter,
     hemisphere,
     critterToSearch,
     searchText,
