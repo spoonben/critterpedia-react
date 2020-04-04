@@ -92,22 +92,22 @@ const monthOptions = [
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [hemisphere, setHemisphere] = useState("northern");
-  const [leavingNow, setLeavingNow] = useState(false);
+  const [availabilty, setAvailablity] = useState("WHENEVER");
   const [critterType, setCritterType] = useState("both");
   const [monthToFilter, setMonthToFilter] = useState(undefined);
   const [sort, setSort] = useState("name");
-
+debugger
   const resultsList = useMemo(
     () =>
       search({
         searchText,
-        leavingNow,
+        availabilty,
         hemisphere,
         critterType,
         sort,
         monthToFilter,
       }),
-    [searchText, leavingNow, hemisphere, critterType, sort, monthToFilter]
+    [searchText, availabilty, hemisphere, critterType, sort, monthToFilter]
   );
 
   const handleChange = (event) => setSearchText(event.target.value);
@@ -155,10 +155,11 @@ const App = () => {
         <SingleSelect
           css="width: 220px"
           options={[
-            { value: false, label: "Leaving whenever" },
-            { value: true, label: "Leaving this month" },
+            { value: 'WHENEVER', label: "Leaving whenever" },
+            { value: 'LEAVING', label: "Leaving this month" },
+            { value: 'NOW', label: "Available this month" },
           ]}
-          onChange={({ value }) => setLeavingNow(value)}
+          onChange={({ value }) => setAvailablity(value)}
         />
         <Spacer width="10px" />
         <SingleSelect
@@ -167,7 +168,7 @@ const App = () => {
           onChange={({ value }) => {
             setMonthToFilter(value);
           }}
-          isDisabled={leavingNow}
+          isDisabled={availabilty !== 'WHENEVER'}
         />
       </Filters>
       <SortBy>

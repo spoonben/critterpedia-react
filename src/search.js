@@ -15,7 +15,7 @@ const filterEverything = ({
   hemisphere,
   critterToSearch,
   searchText,
-  leavingNow,
+  availabilty,
 }) => {
   let crittersFiltered = critterToSearch;
   // Filter by the searched text
@@ -24,27 +24,34 @@ const filterEverything = ({
       item.name.toLowerCase().includes(searchText.toLowerCase())
     );
   }
-  // Filter by "Leaving this month"
-  if (leavingNow) {
-    const currentMonth = new Date().getMonth() + 1; // because javascript thinks jan is 0
-    crittersFiltered = crittersFiltered.filter(
-      (item) =>
-        item.available[hemisphere].includes(currentMonth) &&
-        !item.available[hemisphere].includes(currentMonth + 1)
-    );
-  }
-  // Filter by month
-  if (!leavingNow && monthToFilter) {
-    crittersFiltered = crittersFiltered.filter((item) =>
-      item.available[hemisphere].includes(monthToFilter)
-    );
+  const currentMonth = new Date().getMonth() + 1; // because javascript thinks jan is 0
+  switch (availabilty) {
+    case 'LEAVING':
+      crittersFiltered = crittersFiltered.filter(
+        (item) =>
+          item.available[hemisphere].includes(currentMonth) &&
+          !item.available[hemisphere].includes(currentMonth + 1)
+      );
+      break;
+    case 'WHENEVER':
+      if (monthToFilter) {
+        crittersFiltered = crittersFiltered.filter((item) =>
+          item.available[hemisphere].includes(monthToFilter)
+        );
+      }
+      break;
+    case 'NOW':
+      crittersFiltered = crittersFiltered.filter((item) =>
+        item.available[hemisphere].includes(currentMonth)
+      );
+      break;
   }
   return crittersFiltered;
 };
 
 const search = ({
   searchText,
-  leavingNow,
+  availabilty,
   hemisphere,
   monthToFilter,
   sort = "name",
@@ -57,7 +64,7 @@ const search = ({
     hemisphere,
     critterToSearch,
     searchText,
-    leavingNow,
+    availabilty,
   });
   const sortedResults = sortBy(sort)(resultsToReturn);
   return sort === "value" ? R.reverse(sortedResults) : sortedResults;
