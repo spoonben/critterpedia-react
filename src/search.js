@@ -1,6 +1,7 @@
 import * as R from "ramda";
 
 import { bugs, fish } from "./lists.json";
+import { availabilityMap } from "./components/constants"
 
 const critterTypes = {
   fish,
@@ -26,21 +27,21 @@ const filterEverything = ({
   }
   const currentMonth = new Date().getMonth() + 1; // because javascript thinks jan is 0
   switch (availabilty) {
-    case 'LEAVING':
+    case availabilityMap.LEAVING:
       crittersFiltered = crittersFiltered.filter(
         (item) =>
           item.available[hemisphere].includes(currentMonth) &&
           !item.available[hemisphere].includes(currentMonth + 1)
       );
       break;
-    case 'WHENEVER':
+    case availabilityMap.WHENEVER:
       if (monthToFilter) {
         crittersFiltered = crittersFiltered.filter((item) =>
           item.available[hemisphere].includes(monthToFilter)
         );
       }
       break;
-    case 'NOW':
+    case availabilityMap.NOW:
       crittersFiltered = crittersFiltered.filter((item) =>
         item.available[hemisphere].includes(currentMonth)
       );

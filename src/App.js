@@ -6,7 +6,7 @@ import search from "./search";
 import Github from "./components/github";
 import Results from "./components/results";
 import Spacer from "./components/spacer";
-import { monthMap, mq } from "./components/constants";
+import { monthMap, mq, availabilityMap } from "./components/constants";
 
 const Main = styled.main`
   padding: 20px;
@@ -155,9 +155,9 @@ debugger
         <SingleSelect
           css="width: 220px"
           options={[
-            { value: 'WHENEVER', label: "Leaving whenever" },
-            { value: 'LEAVING', label: "Leaving this month" },
-            { value: 'NOW', label: "Available this month" },
+            { value: availabilityMap.WHENEVER, label: "Leaving whenever" },
+            { value: availabilityMap.LEAVING, label: "Leaving this month" },
+            { value: availabilityMap.NOW, label: "Available this month" },
           ]}
           onChange={({ value }) => setAvailablity(value)}
         />

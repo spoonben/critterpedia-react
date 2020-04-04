@@ -13,6 +13,12 @@ export const monthMap = {
   12: "Dec.",
 };
 
+export const availabilityMap = {
+  WHENEVER: 'WHENEVER',
+  LEAVING: 'LEAVING',
+  NOW: 'NOW'
+}
+
 export const mq = {
   small: "max-width: 600px",
 };
